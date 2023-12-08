@@ -13,10 +13,12 @@ public class Player : MonoBehaviour
 
 
     private bool _isMoving;
+    private bool _interactable;
 
     private Vector2 _inputAxis;
     private Vector3 targetPos;
-
+    
+    
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -29,20 +31,24 @@ public class Player : MonoBehaviour
             //_rigidbody2D.velocity = new Vector2(_input.moveDirection.x * moveSpeed, _input.moveDirection.y * moveSpeed);
             _inputAxis.X = _input.moveDirection.x;
             _inputAxis.Y = _input.moveDirection.y;
+            
 
-
+            
 
             if (_inputAxis != Vector2.Zero)
             {
                 targetPos = transform.position;
                 targetPos.x += _inputAxis.X;
                 targetPos.y += _inputAxis.Y;
+
+                StartCoroutine(Move(targetPos));
             }
         }
     }
 
-    IEnumerator Move(Vector3 targetPos)
+    private IEnumerator Move(Vector3 targetPos)
     {
+        _isMoving = true;
         while ((this.targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
         {
             transform.position = Vector3.MoveTowards(transform.position, this.targetPos, moveSpeed * Time.deltaTime);
@@ -50,6 +56,7 @@ public class Player : MonoBehaviour
         }
 
         transform.position = this.targetPos;
+        _isMoving = false;
     }
     
 }
