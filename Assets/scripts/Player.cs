@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using Vector2 = System.Numerics.Vector2;
@@ -24,6 +25,12 @@ public class Player : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<Input_Controler>();
     }
+
+    private void Update()
+    {
+        
+    }
+
     private void FixedUpdate()
     {
         if (!_isMoving)
