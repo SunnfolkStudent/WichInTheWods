@@ -2,7 +2,27 @@ fileFormatVersion: 2
 guid: faf89220eef6c864b9f603d27b54c2de
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Back
+    second: {fileID: 7400000, guid: d0b44b315ca0c1642a06ff0fd4f59051, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Front
+    second: {fileID: 7400000, guid: c9f45c3dce73fc841b4e24a8c455b8d7, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Left
+    second: {fileID: 7400000, guid: 8529cb8fedd7c504fbb5c1ebbf37a4f0, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Right
+    second: {fileID: 7400000, guid: 9c1fd6b36a82aa4429cb72ebf1630e04, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -35,7 +55,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638378867076410278
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -130,7 +150,7 @@ ScriptedImporter:
       y: 4
       width: 27
       height: 30
-    spriteID: f78778fb308ffe84e98677f55f504edc
+    spriteID: e48dcb88327fcbe4598be2fa0f5f9ffe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,10 +175,32 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 30
-      spriteId: f78778fb308ffe84e98677f55f504edc
+      spriteId: e48dcb88327fcbe4598be2fa0f5f9ffe
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
