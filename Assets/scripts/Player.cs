@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using Vector2 = System.Numerics.Vector2;
 
 public class Player : MonoBehaviour
 {
@@ -32,30 +31,36 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        
+        _inputAxis.x = _input.moveDirection.x;
+        _inputAxis.y = _input.moveDirection.y;
     }
 
     private void FixedUpdate()
     {
+       
         if (!_isMoving)
         {
             //_rigidbody2D.velocity = new Vector2(_input.moveDirection.x * moveSpeed, _input.moveDirection.y * moveSpeed);
-            _inputAxis.X = _input.moveDirection.normalized.x;
-            _inputAxis.Y = _input.moveDirection.normalized.y;
+      
             
+            //print(_inputAxis.magnitude);
+            if (_inputAxis.magnitude > 1)
+            {
+                _inputAxis = _inputAxis.normalized;
+            }
 
             //remove diogonal movment
-            if (_input.moveDirection.x != 0) _inputAxis.Y = 0;
-
-            if (_inputAxis != Vector2.Zero)
+            if (_input.moveDirection.x != 0) _inputAxis.y = 0;
+            
+            if (_inputAxis != Vector2.zero)
             {
-                _animator.SetFloat("horizontal", _inputAxis.X);
-                _animator.SetFloat("vertikcal", _inputAxis.Y);
+                _animator.SetFloat("horizontal", _inputAxis.x);
+                _animator.SetFloat("vertikcal", _inputAxis.y);
+                targetPos = new Vector3((int) transform.position.x, (int)transform.position.y);
+               
+                targetPos.x += (int)_inputAxis.x;
+                targetPos.y += (int)_inputAxis.y;
                 
-                targetPos = transform.position;
-                targetPos.x += _inputAxis.X;
-                targetPos.y += _inputAxis.Y;
-
                 if (IsWalkeble(targetPos))
                     StartCoroutine(Move(targetPos));
                 
@@ -92,7 +97,7 @@ public class Player : MonoBehaviour
 
     private bool IsWalkeble(Vector3 targetPos)
     {
-        if (Physics2D.OverlapCircle(targetPos,0.3f,solidObjectsLayer | interacebleLayer) != null)
+        if (Physics2D.OverlapCircle (targetPos,0.3f,solidObjectsLayer | interacebleLayer) != null)
         {
             return false;
         }
