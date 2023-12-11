@@ -40,8 +40,8 @@ public class Player : MonoBehaviour
         if (!_isMoving)
         {
             //_rigidbody2D.velocity = new Vector2(_input.moveDirection.x * moveSpeed, _input.moveDirection.y * moveSpeed);
-            _inputAxis.X = _input.moveDirection.x;
-            _inputAxis.Y = _input.moveDirection.y;
+            _inputAxis.X = _input.moveDirection.normalized.x;
+            _inputAxis.Y = _input.moveDirection.normalized.y;
             
 
             //remove diogonal movment
