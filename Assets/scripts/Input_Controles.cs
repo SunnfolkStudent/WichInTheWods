@@ -4,8 +4,8 @@ public class Input_Controler : MonoBehaviour
 {
     private  Controles _input;
 
-    public Vector2 moveDirection;
-    public bool interactPressed;
+    [HideInInspector]public Vector2 moveDirection;
+    [HideInInspector]public bool interactPressed;
 
     private void Update()
     {
