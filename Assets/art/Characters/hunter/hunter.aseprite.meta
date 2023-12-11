@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 288a3204c522d6f45960afc495374b0e
+guid: fcf5171fb9356124587b0a6e401a1f4f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638377237834811826
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: theknight_rightsprite_Frame_0
+  - name: hunter
     originalName: 
-    pivot: {x: 0.53846157, y: 0}
+    pivot: {x: 0.5176471, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 26
-      height: 31
-    spriteID: 75fb1ca008002a5439ee0a572ad2ed89
+      width: 85
+      height: 29
+    spriteID: a029479e226759d45811c67a90c87fa4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,132 +139,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: theknight_rightsprite_Frame_1
-    originalName: 
-    pivot: {x: 0.53846157, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 82
-      width: 26
-      height: 30
-    spriteID: 947aa5017fd36dd49b58003dd985752e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 82}
-  - name: theknight_rightsprite_Frame_2
-    originalName: 
-    pivot: {x: 0.53846157, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 43
-      width: 26
-      height: 31
-    spriteID: 39861ee95e77686459557196cd15aa9c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 43}
-  - name: theknight_rightsprite_Frame_3
-    originalName: 
-    pivot: {x: 0.53846157, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 38
-      y: 4
-      width: 26
-      height: 30
-    spriteID: cd2d6d2d962aa094d9acef682b1d5ee0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 38, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1241429168
-    name: theknight_rightsprite
+    guid: 1706432612
+    name: hunter
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: theknight_rightsprite_Frame_0
+    - name: hunter
       frameIndex: 0
       cellRect:
-        x: 2
+        x: 4
         y: 0
-        width: 26
-        height: 31
-      spriteId: 75fb1ca008002a5439ee0a572ad2ed89
-    - name: theknight_rightsprite_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 2
-        y: 1
-        width: 26
-        height: 30
-      spriteId: 947aa5017fd36dd49b58003dd985752e
-    - name: theknight_rightsprite_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 2
-        y: 0
-        width: 26
-        height: 31
-      spriteId: 39861ee95e77686459557196cd15aa9c
-    - name: theknight_rightsprite_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 2
-        y: 1
-        width: 26
-        height: 30
-      spriteId: cd2d6d2d962aa094d9acef682b1d5ee0
+        width: 85
+        height: 29
+      spriteId: a029479e226759d45811c67a90c87fa4
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 96, y: 32}
