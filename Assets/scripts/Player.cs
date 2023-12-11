@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using Vector2 = System.Numerics.Vector2;
@@ -12,6 +11,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private Input_Controler _input;
     private Animator _animator;
+
+    public LayerMask solidObjectsLayer;
+    public LayerMask interacebleLayer;
 
     private bool _isMoving;
     private bool _interactable;
@@ -54,12 +56,27 @@ public class Player : MonoBehaviour
                 targetPos.x += _inputAxis.X;
                 targetPos.y += _inputAxis.Y;
 
-                StartCoroutine(Move(targetPos));
+                if (IsWalkeble(targetPos))
+                    StartCoroutine(Move(targetPos));
+                
+                
             }
         }
         _animator.SetBool("isMoving", _isMoving);
-    }
 
+        if (_input.interactPressed) Interact();
+    }
+    void Interact()
+    {
+        var faceingDir = new Vector3(_animator.GetFloat("horizontal"),_animator.GetFloat("vertikcal"));
+        var interactPos = transform.position + faceingDir;
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interacebleLayer);
+        if (collider != null)
+        {
+            collider.GetComponent<Interaceble>()?.Interact();
+        }
+    }
     private IEnumerator Move(Vector3 targetPos)
     {
         _isMoving = true;
@@ -71,6 +88,16 @@ public class Player : MonoBehaviour
 
         transform.position = this.targetPos;
         _isMoving = false;
+    }
+
+    private bool IsWalkeble(Vector3 targetPos)
+    {
+        if (Physics2D.OverlapCircle(targetPos,0.3f,solidObjectsLayer | interacebleLayer) != null)
+        {
+            return false;
+        }
+
+        return true;
     }
     
 }
