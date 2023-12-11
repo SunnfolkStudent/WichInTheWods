@@ -11,19 +11,21 @@ public class Player : MonoBehaviour
     [Header("Components")]
     private Rigidbody2D _rigidbody2D;
     private Input_Controler _input;
-
+    private Animator _animator;
 
     private bool _isMoving;
     private bool _interactable;
 
     private Vector2 _inputAxis;
     private Vector3 targetPos;
+
     
     
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<Input_Controler>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -40,10 +42,14 @@ public class Player : MonoBehaviour
             _inputAxis.Y = _input.moveDirection.y;
             
 
-            
+            //remove diogonal movment
+            if (_input.moveDirection.x != 0) _inputAxis.Y = 0;
 
             if (_inputAxis != Vector2.Zero)
             {
+                _animator.SetFloat("horizontal", _inputAxis.X);
+                _animator.SetFloat("vertikcal", _inputAxis.Y);
+                
                 targetPos = transform.position;
                 targetPos.x += _inputAxis.X;
                 targetPos.y += _inputAxis.Y;
@@ -51,6 +57,7 @@ public class Player : MonoBehaviour
                 StartCoroutine(Move(targetPos));
             }
         }
+        _animator.SetBool("isMoving", _isMoving);
     }
 
     private IEnumerator Move(Vector3 targetPos)

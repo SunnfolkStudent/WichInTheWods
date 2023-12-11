@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1cf71375bded31b4683ee6fccc916ba7
+guid: 14cea4f18b9577e49b12454d33e00468
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 32
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638377226135541810
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: theknight_frontsprite_Frame_0
+  - name: farmer
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -128,9 +128,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 26
-      height: 31
-    spriteID: 90da113e90f986147a85ddfbb2fefd80
+      width: 86
+      height: 30
+    spriteID: 073388e575217594798a751e3b22ed63
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,132 +139,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: theknight_frontsprite_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 82
-      width: 26
-      height: 30
-    spriteID: 1d551953774d9ac47908932687f3790e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 82}
-  - name: theknight_frontsprite_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 43
-      width: 26
-      height: 31
-    spriteID: 4712c7c7d9901ac4d8854a96a9ae4404
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 43}
-  - name: theknight_frontsprite_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 38
-      y: 4
-      width: 26
-      height: 30
-    spriteID: 1e73111d8afcdcd409a3dd174e6b7c2b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 38, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 18782745
-    name: theknight_frontsprite
+    guid: -1899751393
+    name: farmer
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: theknight_frontsprite_Frame_0
+    - name: farmer
       frameIndex: 0
       cellRect:
-        x: 3
+        x: 5
         y: 0
-        width: 26
-        height: 31
-      spriteId: 90da113e90f986147a85ddfbb2fefd80
-    - name: theknight_frontsprite_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 3
-        y: 1
-        width: 26
+        width: 86
         height: 30
-      spriteId: 1d551953774d9ac47908932687f3790e
-    - name: theknight_frontsprite_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 3
-        y: 0
-        width: 26
-        height: 31
-      spriteId: 4712c7c7d9901ac4d8854a96a9ae4404
-    - name: theknight_frontsprite_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 3
-        y: 1
-        width: 26
-        height: 30
-      spriteId: 1e73111d8afcdcd409a3dd174e6b7c2b
+      spriteId: 073388e575217594798a751e3b22ed63
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 96, y: 32}
