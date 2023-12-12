@@ -1,8 +1,28 @@
 fileFormatVersion: 2
-guid: 1cf71375bded31b4683ee6fccc916ba7
+guid: 2100674cbf218cb47acae6f58d3ab33b
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Back
+    second: {fileID: 7400000, guid: d0b44b315ca0c1642a06ff0fd4f59051, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Front
+    second: {fileID: 7400000, guid: c9f45c3dce73fc841b4e24a8c455b8d7, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Left
+    second: {fileID: 7400000, guid: 8529cb8fedd7c504fbb5c1ebbf37a4f0, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Right
+    second: {fileID: 7400000, guid: 9c1fd6b36a82aa4429cb72ebf1630e04, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638377226135541810
+  platformSettingsDirtyTick: 638378867076410278
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: theknight_frontsprite_Frame_0
+  - name: mayor 2
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.50617284, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 26
+      width: 81
       height: 31
-    spriteID: 90da113e90f986147a85ddfbb2fefd80
+    spriteID: b3373d996641ace4abf6ced4a12825ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,107 +159,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: theknight_frontsprite_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 82
-      width: 26
-      height: 30
-    spriteID: 1d551953774d9ac47908932687f3790e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 82}
-  - name: theknight_frontsprite_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 43
-      width: 26
-      height: 31
-    spriteID: 4712c7c7d9901ac4d8854a96a9ae4404
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 43}
-  - name: theknight_frontsprite_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 38
-      y: 4
-      width: 26
-      height: 30
-    spriteID: 1e73111d8afcdcd409a3dd174e6b7c2b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 38, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 18782745
-    name: theknight_frontsprite
+    guid: -1432811384
+    name: mayor 2
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: theknight_frontsprite_Frame_0
+    - name: mayor 2
       frameIndex: 0
       cellRect:
-        x: 3
+        x: 7
         y: 0
-        width: 26
+        width: 81
         height: 31
-      spriteId: 90da113e90f986147a85ddfbb2fefd80
-    - name: theknight_frontsprite_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 3
-        y: 1
-        width: 26
-        height: 30
-      spriteId: 1d551953774d9ac47908932687f3790e
-    - name: theknight_frontsprite_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 3
-        y: 0
-        width: 26
-        height: 31
-      spriteId: 4712c7c7d9901ac4d8854a96a9ae4404
-    - name: theknight_frontsprite_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 3
-        y: 1
-        width: 26
-        height: 30
-      spriteId: 1e73111d8afcdcd409a3dd174e6b7c2b
+      spriteId: b3373d996641ace4abf6ced4a12825ad
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -267,4 +203,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 96, y: 32}

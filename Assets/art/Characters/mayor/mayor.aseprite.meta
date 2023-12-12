@@ -1,8 +1,28 @@
 fileFormatVersion: 2
-guid: 4a763b274b466b742b89e4cf3621e2c7
+guid: bc06dfc1e55971d41bf577263ef3b335
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Back
+    second: {fileID: 7400000, guid: d0b44b315ca0c1642a06ff0fd4f59051, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Front
+    second: {fileID: 7400000, guid: c9f45c3dce73fc841b4e24a8c455b8d7, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Left
+    second: {fileID: 7400000, guid: 8529cb8fedd7c504fbb5c1ebbf37a4f0, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Right
+    second: {fileID: 7400000, guid: 9c1fd6b36a82aa4429cb72ebf1630e04, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638377237789987614
+  platformSettingsDirtyTick: 638378867076410278
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: theknight_leftsprite_Frame_0
+  - name: mayor
     originalName: 
-    pivot: {x: 0.42307693, y: 0}
+    pivot: {x: 0.50617284, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 26
-      height: 31
-    spriteID: d3a2816c452b0c64dbe6fafad51e0dcd
+      width: 81
+      height: 28
+    spriteID: 64bfd78312b088f4a89bf7b97fe5ded2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,107 +159,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: theknight_leftsprite_Frame_1
-    originalName: 
-    pivot: {x: 0.42307693, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 82
-      width: 26
-      height: 30
-    spriteID: f6905fa1920df174b8ef3697f258c104
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 82}
-  - name: theknight_leftsprite_Frame_2
-    originalName: 
-    pivot: {x: 0.42307693, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 43
-      width: 26
-      height: 31
-    spriteID: 425c3b09eb0bc2f4aa47364f666dd212
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 43}
-  - name: theknight_leftsprite_Frame_3
-    originalName: 
-    pivot: {x: 0.42307693, y: -0.033333335}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 38
-      y: 4
-      width: 26
-      height: 30
-    spriteID: 77d6ceb69144ac8478e690d7c3f14754
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 38, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2082544403
-    name: theknight_leftsprite
+    guid: 569701074
+    name: mayor
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: theknight_leftsprite_Frame_0
+    - name: mayor
       frameIndex: 0
       cellRect:
-        x: 5
+        x: 7
         y: 0
-        width: 26
-        height: 31
-      spriteId: d3a2816c452b0c64dbe6fafad51e0dcd
-    - name: theknight_leftsprite_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 5
-        y: 1
-        width: 26
-        height: 30
-      spriteId: f6905fa1920df174b8ef3697f258c104
-    - name: theknight_leftsprite_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 5
-        y: 0
-        width: 26
-        height: 31
-      spriteId: 425c3b09eb0bc2f4aa47364f666dd212
-    - name: theknight_leftsprite_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 5
-        y: 1
-        width: 26
-        height: 30
-      spriteId: 77d6ceb69144ac8478e690d7c3f14754
+        width: 81
+        height: 28
+      spriteId: 64bfd78312b088f4a89bf7b97fe5ded2
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -267,4 +203,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 96, y: 32}
