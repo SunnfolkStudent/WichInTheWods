@@ -11,14 +11,21 @@ public class Player : MonoBehaviour
     private Input_Controler _input;
     private Animator _animator;
 
+    [Header("Audio")] 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
     public LayerMask solidObjectsLayer;
     public LayerMask interacebleLayer;
 
     private bool _isMoving;
     private bool _interactable;
+    [HideInInspector] public static bool frozen;
 
     private Vector2 _inputAxis;
     private Vector3 targetPos;
+
+    public Vector2 facing;
 
     
     
@@ -33,12 +40,13 @@ public class Player : MonoBehaviour
     {
         _inputAxis.x = _input.moveDirection.x;
         _inputAxis.y = _input.moveDirection.y;
+        if (_input.interactPressed) Interact();
     }
 
     private void FixedUpdate()
     {
        
-        if (!_isMoving)
+        if (!_isMoving && !frozen)
         {
             //_rigidbody2D.velocity = new Vector2(_input.moveDirection.x * moveSpeed, _input.moveDirection.y * moveSpeed);
       
@@ -69,11 +77,12 @@ public class Player : MonoBehaviour
         }
         _animator.SetBool("isMoving", _isMoving);
 
-        if (_input.interactPressed) Interact();
+      
     }
     void Interact()
     {
         var faceingDir = new Vector3(_animator.GetFloat("horizontal"),_animator.GetFloat("vertikcal"));
+        facing = faceingDir;
         var interactPos = transform.position + faceingDir;
 
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interacebleLayer);
@@ -103,6 +112,11 @@ public class Player : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void WalkSound()
+    {
+        audioSource.PlayOneShot(audioClip);
     }
     
 }
