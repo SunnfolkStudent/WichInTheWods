@@ -105,12 +105,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 37a03f09fdbab584aa9b12dd86275a91, type: 3}
   solidObjectsLayer:
     serializedVersion: 2
     m_Bits: 128
   interacebleLayer:
     serializedVersion: 2
     m_Bits: 64
+  facing: {x: 0, y: 0}
 --- !u!58 &5913291153670747934
 CircleCollider2D:
   m_ObjectHideFlags: 0

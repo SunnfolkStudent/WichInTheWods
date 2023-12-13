@@ -24,7 +24,7 @@ AnimationClip:
       value: {fileID: -2226815329847341364, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
     - time: 0.21
       value: {fileID: 96689211056353196, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
-    - time: 0.42000002
+    - time: 0.42
       value: {fileID: -2838114765927075455, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
     - time: 0.63000005
       value: {fileID: 7223411588317382799, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
@@ -81,4 +81,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: WalkSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.42
+    functionName: WalkSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

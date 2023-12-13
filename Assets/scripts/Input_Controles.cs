@@ -5,7 +5,7 @@ public class Input_Controler : MonoBehaviour
     private  Controles _input;
 
     [HideInInspector]public Vector2 moveDirection;
-    [HideInInspector]public bool interactPressed;
+    [HideInInspector] public bool interactPressed;
 
     private void Update()
     {
