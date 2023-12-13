@@ -44,6 +44,10 @@ public class Player : MonoBehaviour
         _inputAxis.x = _input.moveDirection.x;
         _inputAxis.y = _input.moveDirection.y;
         if (_input.interactPressed) Interact();
+        if (indexCount > 6)
+        {
+            indexCount = 6;
+        }
         
         
         if (notbokOpen)
