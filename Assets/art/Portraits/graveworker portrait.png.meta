@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      graveworker portrait_0: 8102115923078524509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

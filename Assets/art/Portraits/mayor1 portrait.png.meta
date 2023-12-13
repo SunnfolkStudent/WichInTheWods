@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mayor1 portrait_0: 1641659521105787397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

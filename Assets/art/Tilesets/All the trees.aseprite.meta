@@ -141,7 +141,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: All the trees
     originalName: 
-    pivot: {x: 0.6999189, y: -0.085409254}
+    pivot: {x: 0.6999189, y: -0.060000002}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -149,7 +149,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 1233
-      height: 281
+      height: 400
     spriteID: 60728b5614dd9be4b882d42c0b70ff68
     spriteBone: []
     spriteOutline: []
@@ -174,7 +174,7 @@ ScriptedImporter:
         x: 97
         y: 24
         width: 1233
-        height: 281
+        height: 400
       spriteId: 60728b5614dd9be4b882d42c0b70ff68
     linkedCells: []
     parentIndex: -1

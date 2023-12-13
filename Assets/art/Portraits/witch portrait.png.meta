@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      witch portrait_0: 8483708553598138486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gaurd1 portrait_0: 7337067009248657747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
