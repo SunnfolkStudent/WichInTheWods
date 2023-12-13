@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -41,6 +42,8 @@ public class Player : MonoBehaviour
         _inputAxis.x = _input.moveDirection.x;
         _inputAxis.y = _input.moveDirection.y;
         if (_input.interactPressed) Interact();
+        if (_input.openNoteBook) SceneManager.LoadScene("Notbok", LoadSceneMode.Additive);
+
     }
 
     private void FixedUpdate()

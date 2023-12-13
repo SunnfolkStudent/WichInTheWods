@@ -44,6 +44,15 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""openNotebook"",
+                    ""type"": ""Button"",
+                    ""id"": ""5fca179d-bcae-4f1c-95ba-b952524d4633"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -200,6 +209,17 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""action"": ""Interackt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6ab1b861-9abc-48f1-9301-953f095ec1aa"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""openNotebook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -210,6 +230,7 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_move = m_Player.FindAction("move", throwIfNotFound: true);
         m_Player_Interackt = m_Player.FindAction("Interackt", throwIfNotFound: true);
+        m_Player_openNotebook = m_Player.FindAction("openNotebook", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -273,12 +294,14 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_move;
     private readonly InputAction m_Player_Interackt;
+    private readonly InputAction m_Player_openNotebook;
     public struct PlayerActions
     {
         private @Controles m_Wrapper;
         public PlayerActions(@Controles wrapper) { m_Wrapper = wrapper; }
         public InputAction @move => m_Wrapper.m_Player_move;
         public InputAction @Interackt => m_Wrapper.m_Player_Interackt;
+        public InputAction @openNotebook => m_Wrapper.m_Player_openNotebook;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -294,6 +317,9 @@ public partial class @Controles: IInputActionCollection2, IDisposable
             @Interackt.started += instance.OnInterackt;
             @Interackt.performed += instance.OnInterackt;
             @Interackt.canceled += instance.OnInterackt;
+            @openNotebook.started += instance.OnOpenNotebook;
+            @openNotebook.performed += instance.OnOpenNotebook;
+            @openNotebook.canceled += instance.OnOpenNotebook;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -304,6 +330,9 @@ public partial class @Controles: IInputActionCollection2, IDisposable
             @Interackt.started -= instance.OnInterackt;
             @Interackt.performed -= instance.OnInterackt;
             @Interackt.canceled -= instance.OnInterackt;
+            @openNotebook.started -= instance.OnOpenNotebook;
+            @openNotebook.performed -= instance.OnOpenNotebook;
+            @openNotebook.canceled -= instance.OnOpenNotebook;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -325,5 +354,6 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnInterackt(InputAction.CallbackContext context);
+        void OnOpenNotebook(InputAction.CallbackContext context);
     }
 }

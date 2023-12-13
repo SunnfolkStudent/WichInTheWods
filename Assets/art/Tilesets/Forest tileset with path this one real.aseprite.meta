@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb23beb80655d4d428c8ea1721de0ca2
+guid: b7a7ff91c7f72eb4d861d9d633c5f8e6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -139,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Forest tileset with path
+  - name: Forest tileset with path this one real
     originalName: 
-    pivot: {x: 0.5313981, y: -0.03125}
+    pivot: {x: 0.5, y: 0.007352941}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1688
-      height: 768
-    spriteID: 2aa35639c55475146a6e4ccd440960a6
+      width: 1920
+      height: 1088
+    spriteID: 9625dce7734433448b7b1d8f00be4842
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,20 +162,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1937202724
-    name: Forest tileset with path
+    guid: -896449808
+    name: Forest tileset with path this one real
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Forest tileset with path
+    - name: Forest tileset with path this one real
       frameIndex: 0
       cellRect:
-        x: 63
-        y: 24
-        width: 1688
-        height: 768
-      spriteId: 2aa35639c55475146a6e4ccd440960a6
+        x: 0
+        y: -8
+        width: 1920
+        height: 1088
+      spriteId: 9625dce7734433448b7b1d8f00be4842
     linkedCells: []
     parentIndex: -1
   platformSettings:
