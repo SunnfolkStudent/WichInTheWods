@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b38af3003dbb554daf37018d0741bb5
+guid: 0ec9007fa0d0b1341b14389155a526c5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      kid portrait_0: -7371906412533964069
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
