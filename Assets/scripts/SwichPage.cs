@@ -1,15 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Switch : MonoBehaviour
+public class SwitchPage : MonoBehaviour
 {
     private bool _hasHapend;
+    private GameObject _gameObject;
     
     private Input_Controler _input;
    
     public GameObject[] background;
     public int index;
-    public int indexCount;
 
     void Start()
     {
@@ -20,8 +19,8 @@ public class Switch : MonoBehaviour
 
     void Update()
     {
-        if(index >= indexCount)
-            index = indexCount ; 
+        if(index >= Player.indexCount)
+            index = Player.indexCount; 
 
         if(index < 0)
             index = 0 ;
@@ -50,8 +49,7 @@ public class Switch : MonoBehaviour
         {
             _hasHapend = false;
         }
-
-        if (_input.openNoteBook) SceneManager.UnloadSceneAsync("Notbok");
+        
     }
 
     private void Next()

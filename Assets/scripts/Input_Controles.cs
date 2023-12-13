@@ -12,7 +12,7 @@ public class Input_Controler : MonoBehaviour
     {
         moveDirection = _input.Player.move.ReadValue<Vector2>();
         interactPressed = _input.Player.Interackt.WasPressedThisFrame();
-        openNoteBook = _input.Player.Interackt.WasPressedThisFrame();
+        openNoteBook = _input.Player.openNotebook.WasPressedThisFrame();
     }
 
     private void Awake()
