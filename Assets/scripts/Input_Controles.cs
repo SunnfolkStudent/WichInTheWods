@@ -6,11 +6,13 @@ public class Input_Controler : MonoBehaviour
 
     [HideInInspector]public Vector2 moveDirection;
     [HideInInspector] public bool interactPressed;
+    [HideInInspector] public bool openNoteBook;
 
     private void Update()
     {
         moveDirection = _input.Player.move.ReadValue<Vector2>();
         interactPressed = _input.Player.Interackt.WasPressedThisFrame();
+        openNoteBook = _input.Player.openNotebook.WasPressedThisFrame();
     }
 
     private void Awake()
