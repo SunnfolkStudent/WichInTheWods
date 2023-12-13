@@ -17,8 +17,11 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
     public bool waitingForResponse;
     [HideInInspector]
     public int currentDialogueLine;
+
+    public bool treatCommandAsDialogue;
     
     private bool _conversationRunning;
+    
     
     private TextArchitect _architect;
     
@@ -83,9 +86,12 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
 
             if (line.hasCommands)
                 yield return Line_RunCommands(line);
-                
-            if (line.hasDialogue)
+
+            if (line.hasDialogue || treatCommandAsDialogue)
+            {
                 yield return WaitForUserInput();
+                treatCommandAsDialogue = false;
+            }
         }
     }
     

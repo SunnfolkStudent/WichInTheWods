@@ -31,6 +31,7 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
     {
         ButtonManager.DisplayButtons(options);
         NpcSpeaker.CurrentSpeaker.waitingForResponse = true;
+        NpcSpeaker.CurrentSpeaker.treatCommandAsDialogue = true;
     }
     
     //Used for deleting the route that wasn't chosen after a choice.

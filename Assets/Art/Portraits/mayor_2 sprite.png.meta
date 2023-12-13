@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: bea1d3cd0a195454d94b9df287585969
+guid: 42ed771195e1fe64295e5f18a5d947e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1365539031471768751
-    second: candle_0
+      213: 3535784353974622974
+    second: mayor_2 sprite_0
   - first:
-      213: 3164754189931214212
-    second: candle_1
+      213: 7449128742076635998
+    second: mayor_2 sprite_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -101,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: candle_0
+      name: mayor_2 sprite_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 9
-        height: 13
+        width: 574
+        height: 483
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa44ec1a38e53f210800000000000000
-      internalID: 1365539031471768751
+      spriteID: efa9a05f221a11130800000000000000
+      internalID: 3535784353974622974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: candle_1
+      name: mayor_2 sprite_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 8
-        height: 16
+        x: 581
+        y: 74
+        width: 15
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 485774c0b277beb20800000000000000
-      internalID: 3164754189931214212
+      spriteID: e5b51adaf1f906760800000000000000
+      internalID: 7449128742076635998
       vertices: []
       indices: 
       edges: []
@@ -152,9 +152,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      candle_0: 1365539031471768751
-      candle_1: 3164754189931214212
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

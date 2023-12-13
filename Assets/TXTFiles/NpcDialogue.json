@@ -46,12 +46,17 @@
       "dialogue": {
         "dialogue1": [
           "\"Greetings Ser, wonderful day we’re having here isn’t it\"",
-          "Choice(\"Yes, well met friend, I’m here to find a witch, do you know anything that could help?\")",
+          "Choices(\"Yes, well met friend, I’m here to find a witch, do you know anything that could help?\")",
           "\"Oh yes, I saw the witch skulking through my fields one night, she was clearly up to no good.\"",
-          "Choice(\"Interesting, anything else I should know?\")",
+          "Choices(\"Interesting, anything else I should know?\")",
           "\"Some of my animals have disappeared, I just know that the witch was involved. She’s taken some lambs and chickens, please find her so she can face justice.\"",
-          "Choice(\"I shall Farmer, fare thee well.\")",
-          "\"Farewell Good Sir, I wish you the best of luck.\""
+          "Choices(\"I shall Farmer, fare thee well.\")",
+          "\"Farewell Good Sir, I wish you the best of luck.\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Farewell Good Sir, I wish you the best of luck.\"",
+          "Leave()"
         ]
       }
     },
@@ -61,12 +66,17 @@
       "dialogue": {
         "dialogue1": [
           "\"Welcome my young friend, I am the mayor of this village. How may I be of assistance?\"",
-          "Choice(\"Hello Mayor, I am here looking for a witch, I was told that they were last seen here?\")",
+          "Choices(\"Hello Mayor, I am here looking for a witch, I was told that they were last seen here?\")",
           "\"I’m sorry to say that I have not seen the witch for some time, however, she did have a house here in the village.\"",
-          "Choice(\"Huh, would it be acceptable to search the house so that I may try and find clues?\")",
+          "Choices(\"Huh, would it be acceptable to search the house so that I may try and find clues?\")",
           "\"Of course Ser Knight, here is the key to the house.\"",
-          "Choice(\"Thank you Mayor, I shall go investigate, farewell.\")",
-          "\"Good luck Ser Knight.\""
+          "Choices(\"Thank you Mayor, I shall go investigate, farewell.\")",
+          "\"Good luck Ser Knight.\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Good luck Ser Knight.\"",
+          "Leave()"
         ]
       }
     },
@@ -75,54 +85,190 @@
       "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
-          "\"Dialogue 1 for NPC 2\"",
-          "\"Dialogue 2 for NPC 2\"",
-          "\"Dialogue 3 for NPC 2\""
+          "\"Halt! What are you doing?\"",
+          "Choices(\"Stay your hand my friend I am trying to find the witch.\")",
+          "\"ah, my apologies Ser Knight, after learning there was a witch among us I fear for the innocent people of this village.\"",
+          "Choices(\"Understandable, I don’t suppose there is anything you can tell me about the witch is there?\")",
+          "\"Yes actually, I heard the farmer talking about the witch, might be something there.\"",
+          "Choices(\"Very well i shall continue my search.\")",
+          "\"Be careful Ser Knight, I heard the witch used a potion on the child.\" NextDialogue()",
+          "Leave()"
         ],
         "dialogue2": [
-          "\"Dialogue2 1 for NPC 2\""
+          "\"Be careful Ser Knight, I heard the witch used a potion on the child.\"",
+          "Leave()"
         ]
       }
     },
     {
-      "name": "ExampleNpc",
+      "name": "Grave Worker",
       "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
-          "\"Dialogue 1 for NPC 2\"",
-          "\"Dialogue 2 for NPC 2\"",
-          "\"Dialogue 3 for NPC 2\""
+          "\"Hello Ser, what brings you to the graveyard?\"",
+          "Choices(\"greetings, I was wondering if you knew anything about the witch.\")",
+          "\"Other than that they hid right under our noses, not much unfortunately.\"",
+          "Choices(\"That’s alright, whatever information you can give me will be helpful\")",
+          "\"Well I think they would use the crypt when no one was around as the bones have been moved.\"",
+          "Choices(\"I shall have to take a look at that, thank you.\")",
+          "\"Well, good luck\" NextDialogue()",
+          "Leave()"
         ],
         "dialogue2": [
-          "\"Dialogue2 1 for NPC 2\""
+          "\"Well, good luck\"",
+          "Leave()"
         ]
       }
     },
     {
-      "name": "ExampleNpc",
+      "name": "Child",
       "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
-          "\"Dialogue 1 for NPC 2\"",
-          "\"Dialogue 2 for NPC 2\"",
-          "\"Dialogue 3 for NPC 2\""
+          "\"Hi, do you want to play a game with me\"",
+          "Choices(\"Hello little one, I’m sorry but I can’t play any games at the moment. However, maybe you could help me find the lady that gave you a potion.\")",
+          "\"Okay, the lady was very nice, she made me not sick anymore.\"",
+          "Choices(\"What do you mean?\")",
+          "\"I was really sick and the nice lady gave me a red drink and then I got better.\"",
+          "Choices(\"Well that’s good to hear. Take care young one.\")",
+          "\"Okay, bye bye, please thank the nice lady for me if you see her\" NextDialogue()",
+          "Leave()"
         ],
         "dialogue2": [
-          "\"Dialogue2 1 for NPC 2\""
+          "\"Okay, bye bye, please thank the nice lady for me if you see her\"",
+          "Leave()"
         ]
       }
     },
     {
-      "name": "ExampleNpc",
+      "name": "Beggar",
       "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
-          "\"Dialogue 1 for NPC 2\"",
-          "\"Dialogue 2 for NPC 2\"",
-          "\"Dialogue 3 for NPC 2\""
+          "\"Spare a coin for a soul in need good ser\"",
+          "Choices(\"sorry my lady but unfortunately I have nought to give, I am here to ask about a witch that may have come through this village\")",
+          "\"Oh, oh no, that’s not good, are we going to be safe?\"",
+          "Choices(\"Fear not for I shall find this witch and she shall face justice for her crimes\")",
+          "\"Thank you ser knight, perhaps you should check with the guard as he has seen all sorts of people come through.\"",
+          "Choices(\"Thank you my lady\")",
+          "\"Farewell ser knight and good luck\" NextDialogue()",
+          "Leave()"
         ],
         "dialogue2": [
-          "\"Dialogue2 1 for NPC 2\""
+          "\"Okay, bye bye, please thank the nice lady for me if you see her\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Mayor2",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Ah, ser knight, I have heard that we may have a witch in the village\"",
+          "Choices(\"That is correct mayor, I don’t suppose you’ve seen anything amiss here?\")",
+          "\"There were a few things now that you mention. I have heard odd noises recently, and a strange cat that I don’t recognize has been around.\"",
+          "Choices(\"Would you happen to remember where you saw this cat?\")",
+          "\"I believe that it prowls around the church.\"",
+          "Choices(\"This has been most helpful thank you.\")",
+          "\"Best of luck ser knight\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Best of luck ser knight\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Priest",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Greetings my child, how may I help you\"",
+          "Choices(\"I’m sorry to disturb you father but I was hoping you might know anything about a witch that may be in the area.\")",
+          "\"Dreadful creatures witches, unfortunately I don’t know about the witch themselves, however, I believe the hunter may know something as they have been grumbling more recently.\"",
+          "Choices(\"Very well, what about that cat next to you?\")",
+          "\"Oh this little one, they’ve been here a little bit now but hasn’t disturbed anyone and has been fine company\"",
+          "Choices(\"Thank you father, I shall be on my way\")",
+          "\"May the lord bless you on your search my child\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"May the lord bless you on your search my child\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Hunter",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"*Grumble* What do you want?\"",
+          "Choices(\"Well I was wondering if you knew anything about a witch that may be near\")",
+          "\"Yeah, there as been less animals recently almost as if they just vanished\"",
+          "Choices(\"Interesting, what else is there?\")",
+          "\"Well the other night I swear that I saw someone flying across the sky beyond the forest\"",
+          "Choices(\"I shall look into it\")",
+          "\"Get rid of that witch so that I can hunt again\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Get rid of that witch so that I can hunt again\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Guard2",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"How are you, ser knight?\"",
+          "Choices(\"I am well, I am looking for a witch and was wondering if there have been any new faces that seemed suspicious in recent weeks\")",
+          "\"There have been a few new face though none that seemed odd, just a few traders\"",
+          "Choices(\"Well has there been any strange occurrences you can recall?\")",
+          "\"There were strange lights near the pond though it didn’t seem to be a problem\"",
+          "Choices(\"Much appreciated \")",
+          "\"Farewell ser knight\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Farewell ser knight\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Witch",
+      "WhichDialogue": 1,
+      "dialogue": {
+        "dialogue1": [
+          "\"...\"",
+          "Choices(\"So you were the witch, disguising yourself as a beggar to avoid suspicion, clever\")",
+          "\"I’m sorry for my deception, but I’m sure you can understand the need for it with you trying to capture me. I will tell you now I shall not be going with you.\"",
+          "Choices(\"You won’t have a choice, if need be I’ll take you in by force. It would be best for you to simply surrender yourself\")",
+          "\"How much faith must you have to blindly follow your masters and condemn any who would practice magic regardless of what they do with that gift? I swear that I am no threat to you, I have no wish to harm anyone\"",
+          "Choices(\"Even if I believed you I can’t allow you to leave, I swore an oath to the church and must follow their word\")",
+          "\"You shouldn’t let your life be lived as a weapon but live it as you wish. I shall ask once more, let me leave and you’ll see that not all of the church's words hold truth, or try to bring me in and prove yourself nought more than a weapon to be used.\" NextDialogue()",
+          "Choices(\"I can’t let you go, you are a witch and lies and tricks are your craft, I shall take you in and you shall face judgment.\" \"Perhaps, it is time to think for myself, I I’m not sure what I’ll tell everyone but I suppose I can think of something\")",
+          "DeleteLines(\"1\" \"4\" \"5\" \"6\")",
+          "\"Very well, then you shall be forced to best me, weapon.*Fight*\"",
+          "\"NO!!!! All you’ve done here WEAPON is prove that you belong TO the church.\"",
+          "Choices(\"For the crimes of witchcraft I am taking you to face justice, if the word of our lord be true, then you shall burn.\")",
+          "NextScene()",
+          "\"Thank you Ser Knight, I promise that you have done a good thing here today. You have proved that you still hold your soul\"",
+          "Choices(\"Minerva, make a better life for yourself, go somewhere where you need not worry about the church or people who wish to harm you, I wish you the best for the future\")",
+          "\"Perhaps we shall meet once again in the future, at least I hope so, for I wish good fortune upon you for giving me a chance\"",
+          "Choices(\"Farewell Minerva\")",
+          "\"Farewell Ser Knight, may fate smile upon us for the future.\"",
+          "NextScene()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Farewell ser knight\"",
+          "Leave()"
         ]
       }
     }
