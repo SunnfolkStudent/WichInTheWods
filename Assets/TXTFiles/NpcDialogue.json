@@ -1,0 +1,130 @@
+{
+  "npcs": [
+    {
+      "name": "ExampleNpc",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Dialogue 1 for NPC 2\"",
+          "\"Dialogue 2 for NPC 2\"",
+          "\"Dialogue 3 for NPC 2\""
+        ],
+        "dialogue2": [
+          "\"Dialogue2 1 for NPC 2\""
+        ]
+      }
+    },
+    {
+      "name": "NPC 1",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Dialogue 1 for NPC 1\"",
+          "\"How are you\" Choices(\"I am good\" \"I am not good\")",
+          "DeleteLines(\"1\" \"3\" \"4\" \"3\")",
+          "\"option 1 first\"",
+          "\"option 1 second\"",
+          "\"option 1 third\"",
+          "\"option 2 first\"",
+          "\"option 2 second\"",
+          "\"option 2 third\"",
+          "\"That's great to hear\"",
+          "\"I am so sorry\"",
+          "\"Dialogue 3 for NPC 1\" NextDialogue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"Dialogue2 1 for NPC 1\"",
+          "\"Dialogue2 2 for NPC 1\"",
+          "\"Dialogue2 3 for NPC 1\""
+        ]
+      }
+    },
+    {
+      "name": "Farmer",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Greetings Ser, wonderful day we’re having here isn’t it\"",
+          "Choice(\"Yes, well met friend, I’m here to find a witch, do you know anything that could help?\")",
+          "\"Oh yes, I saw the witch skulking through my fields one night, she was clearly up to no good.\"",
+          "Choice(\"Interesting, anything else I should know?\")",
+          "\"Some of my animals have disappeared, I just know that the witch was involved. She’s taken some lambs and chickens, please find her so she can face justice.\"",
+          "Choice(\"I shall Farmer, fare thee well.\")",
+          "\"Farewell Good Sir, I wish you the best of luck.\""
+        ]
+      }
+    },
+    {
+      "name": "Mayor1",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Welcome my young friend, I am the mayor of this village. How may I be of assistance?\"",
+          "Choice(\"Hello Mayor, I am here looking for a witch, I was told that they were last seen here?\")",
+          "\"I’m sorry to say that I have not seen the witch for some time, however, she did have a house here in the village.\"",
+          "Choice(\"Huh, would it be acceptable to search the house so that I may try and find clues?\")",
+          "\"Of course Ser Knight, here is the key to the house.\"",
+          "Choice(\"Thank you Mayor, I shall go investigate, farewell.\")",
+          "\"Good luck Ser Knight.\""
+        ]
+      }
+    },
+    {
+      "name": "Guard1",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Dialogue 1 for NPC 2\"",
+          "\"Dialogue 2 for NPC 2\"",
+          "\"Dialogue 3 for NPC 2\""
+        ],
+        "dialogue2": [
+          "\"Dialogue2 1 for NPC 2\""
+        ]
+      }
+    },
+    {
+      "name": "ExampleNpc",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Dialogue 1 for NPC 2\"",
+          "\"Dialogue 2 for NPC 2\"",
+          "\"Dialogue 3 for NPC 2\""
+        ],
+        "dialogue2": [
+          "\"Dialogue2 1 for NPC 2\""
+        ]
+      }
+    },
+    {
+      "name": "ExampleNpc",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Dialogue 1 for NPC 2\"",
+          "\"Dialogue 2 for NPC 2\"",
+          "\"Dialogue 3 for NPC 2\""
+        ],
+        "dialogue2": [
+          "\"Dialogue2 1 for NPC 2\""
+        ]
+      }
+    },
+    {
+      "name": "ExampleNpc",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Dialogue 1 for NPC 2\"",
+          "\"Dialogue 2 for NPC 2\"",
+          "\"Dialogue 3 for NPC 2\""
+        ],
+        "dialogue2": [
+          "\"Dialogue2 1 for NPC 2\""
+        ]
+      }
+    }
+  ]
+}
