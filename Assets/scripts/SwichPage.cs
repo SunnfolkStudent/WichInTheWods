@@ -9,6 +9,7 @@ public class Switch : MonoBehaviour
    
     public GameObject[] background;
     public int index;
+    public int indexCount;
 
     void Start()
     {
@@ -19,8 +20,8 @@ public class Switch : MonoBehaviour
 
     void Update()
     {
-        if(index >= 5)
-            index = 5 ; 
+        if(index >= indexCount)
+            index = indexCount ; 
 
         if(index < 0)
             index = 0 ;
@@ -62,7 +63,6 @@ public class Switch : MonoBehaviour
             t.gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
-        Debug.Log(index);
     }
 
     private void Previous()
@@ -74,7 +74,7 @@ public class Switch : MonoBehaviour
             background[i].gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
-        Debug.Log(index);
+        
     }
 
     
