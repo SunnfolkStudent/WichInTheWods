@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sundial ch1_0: 732630073466430015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

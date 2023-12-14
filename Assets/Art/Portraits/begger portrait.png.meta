@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      begger portrait_0: -8954206850433104687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
