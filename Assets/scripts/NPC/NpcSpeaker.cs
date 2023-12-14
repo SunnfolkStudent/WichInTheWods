@@ -17,12 +17,12 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
     public bool waitingForResponse;
     [HideInInspector]
     public int currentDialogueLine;
-
+    [HideInInspector]
     public bool treatCommandAsDialogue;
     
     private bool _conversationRunning;
     
-    
+    private SpriteRenderer spriteRenderer;
     private TextArchitect _architect;
     
     private Coroutine _speakingCoroutine;
@@ -34,6 +34,8 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
     {
         NpcDialogueHandler.ResetDialogue();
         _architect = new TextArchitect(text);
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = npc.sprite;
     }
 
     // Update is called once per frame
@@ -59,10 +61,12 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
         _conversationRunning = false;
         CurrentSpeaker = null;
         DialogueBoxManager.Instance.HideDialogueContainers();
+        Player.frozen = false;
     }
     
     private void StartSpeaking()
     {
+        Player.frozen = true;
         whichDialogue = NpcDialogueHandler.GetWhichDialogue(npc.npcName);
         dialogueDict = NpcDialogueHandler.GetDialogue(npc.npcName);
         CurrentSpeaker = this;

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using GameObject = UnityEngine.GameObject;
@@ -9,6 +10,7 @@ public class DialogueBoxManager : MonoBehaviour
     
     private List<GameObject> dialogueUI = new List<GameObject>();
     public Image portraitNpcImage;
+    public TextMeshProUGUI nameTextBox;
 
     private void Start()
     {
@@ -35,7 +37,15 @@ public class DialogueBoxManager : MonoBehaviour
             UIElement.SetActive(true);
         }
 
+        nameTextBox.text = NpcSpeaker.CurrentSpeaker.npc.npcName;
         portraitNpcImage.sprite = npcPortrait;
+        
+
+        float aspectRatio = portraitNpcImage.sprite.rect.height / portraitNpcImage.sprite.rect.width;
+
+        // Set the height to maintain aspect ratio while changing width
+        portraitNpcImage.rectTransform.sizeDelta = new Vector2(portraitNpcImage.rectTransform.sizeDelta.y / aspectRatio, portraitNpcImage.rectTransform.sizeDelta.y);
+        
     }
 
     public void HideDialogueContainers()

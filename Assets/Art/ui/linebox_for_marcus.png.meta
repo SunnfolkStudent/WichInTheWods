@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa5e9aa6d2c9c6648856e7847c0277d8
+guid: ee79e3be2c803064884e1c5a0b6fa159
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 367105011239860752
-    second: sundial ch4_0
+      213: -7899370251480510280
+    second: linebox_for_marcus_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,22 +98,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sundial ch4_0
+      name: linebox_for_marcus_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 34
-        height: 36
+        x: 32
+        y: 49
+        width: 248
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 5, z: 7, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01ab73e0018381500800000000000000
-      internalID: 367105011239860752
+      spriteID: 8b05733eb9ccf5290800000000000000
+      internalID: -7899370251480510280
       vertices: []
       indices: 
       edges: []
@@ -121,14 +121,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1f8336ddd8d32be4c99392cef9ffa936
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      linebox_for_marcus_0: -7899370251480510280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

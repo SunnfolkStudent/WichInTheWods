@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa5e9aa6d2c9c6648856e7847c0277d8
+guid: 9fbbaf4371825b44ebab4444f4f78c4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 367105011239860752
-    second: sundial ch4_0
+      213: -1981997139514376880
+    second: diary_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sundial ch4_0
+      name: diary_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 34
-        height: 36
+        x: 3
+        y: 1
+        width: 11
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01ab73e0018381500800000000000000
-      internalID: 367105011239860752
+      spriteID: 05db7694a188e74e0800000000000000
+      internalID: -1981997139514376880
       vertices: []
       indices: 
       edges: []

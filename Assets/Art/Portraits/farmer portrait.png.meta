@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa5e9aa6d2c9c6648856e7847c0277d8
+guid: 4bb41ba7b60beda4586b8641cf9aacb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 367105011239860752
-    second: sundial ch4_0
+      213: -303343621262420566
+    second: farmer portrait_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sundial ch4_0
+      name: farmer portrait_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 34
-        height: 36
+        x: 2
+        y: 0
+        width: 502
+        height: 478
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01ab73e0018381500800000000000000
-      internalID: 367105011239860752
+      spriteID: aa5d5c9659e4acbf0800000000000000
+      internalID: -303343621262420566
       vertices: []
       indices: 
       edges: []
