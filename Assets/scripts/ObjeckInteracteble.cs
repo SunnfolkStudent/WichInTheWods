@@ -9,6 +9,7 @@ public class ObjeckInteracteble : MonoBehaviour, Interactable
         {
             print("interacted");
             Player.indexCount++;
+            gotClueThisLevel = true;
         }
         
     }
