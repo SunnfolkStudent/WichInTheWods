@@ -53,6 +53,24 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextDialogueOption"",
+                    ""type"": ""Button"",
+                    ""id"": ""19e8e6d3-b16d-4e23-8929-5c7464db7515"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PreviousDialogueOption"",
+                    ""type"": ""Button"",
+                    ""id"": ""59c7ec63-1f30-41b4-abc7-ec8615242c67"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -220,6 +238,50 @@ public partial class @Controles: IInputActionCollection2, IDisposable
                     ""action"": ""openNotebook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c83c1cc-1d0d-4584-854f-6378c2133316"",
+                    ""path"": ""<Keyboard>/#(S)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextDialogueOption"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c597137f-a021-437f-bc1b-8308405c484c"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextDialogueOption"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""99b12e81-b7da-459d-a9d9-ba468559a9d8"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PreviousDialogueOption"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9edb35ab-06f1-4dc5-833b-999df1ae99cc"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PreviousDialogueOption"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -231,6 +293,8 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         m_Player_move = m_Player.FindAction("move", throwIfNotFound: true);
         m_Player_Interackt = m_Player.FindAction("Interackt", throwIfNotFound: true);
         m_Player_openNotebook = m_Player.FindAction("openNotebook", throwIfNotFound: true);
+        m_Player_NextDialogueOption = m_Player.FindAction("NextDialogueOption", throwIfNotFound: true);
+        m_Player_PreviousDialogueOption = m_Player.FindAction("PreviousDialogueOption", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -295,6 +359,8 @@ public partial class @Controles: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_move;
     private readonly InputAction m_Player_Interackt;
     private readonly InputAction m_Player_openNotebook;
+    private readonly InputAction m_Player_NextDialogueOption;
+    private readonly InputAction m_Player_PreviousDialogueOption;
     public struct PlayerActions
     {
         private @Controles m_Wrapper;
@@ -302,6 +368,8 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         public InputAction @move => m_Wrapper.m_Player_move;
         public InputAction @Interackt => m_Wrapper.m_Player_Interackt;
         public InputAction @openNotebook => m_Wrapper.m_Player_openNotebook;
+        public InputAction @NextDialogueOption => m_Wrapper.m_Player_NextDialogueOption;
+        public InputAction @PreviousDialogueOption => m_Wrapper.m_Player_PreviousDialogueOption;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -320,6 +388,12 @@ public partial class @Controles: IInputActionCollection2, IDisposable
             @openNotebook.started += instance.OnOpenNotebook;
             @openNotebook.performed += instance.OnOpenNotebook;
             @openNotebook.canceled += instance.OnOpenNotebook;
+            @NextDialogueOption.started += instance.OnNextDialogueOption;
+            @NextDialogueOption.performed += instance.OnNextDialogueOption;
+            @NextDialogueOption.canceled += instance.OnNextDialogueOption;
+            @PreviousDialogueOption.started += instance.OnPreviousDialogueOption;
+            @PreviousDialogueOption.performed += instance.OnPreviousDialogueOption;
+            @PreviousDialogueOption.canceled += instance.OnPreviousDialogueOption;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -333,6 +407,12 @@ public partial class @Controles: IInputActionCollection2, IDisposable
             @openNotebook.started -= instance.OnOpenNotebook;
             @openNotebook.performed -= instance.OnOpenNotebook;
             @openNotebook.canceled -= instance.OnOpenNotebook;
+            @NextDialogueOption.started -= instance.OnNextDialogueOption;
+            @NextDialogueOption.performed -= instance.OnNextDialogueOption;
+            @NextDialogueOption.canceled -= instance.OnNextDialogueOption;
+            @PreviousDialogueOption.started -= instance.OnPreviousDialogueOption;
+            @PreviousDialogueOption.performed -= instance.OnPreviousDialogueOption;
+            @PreviousDialogueOption.canceled -= instance.OnPreviousDialogueOption;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -355,5 +435,7 @@ public partial class @Controles: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnInterackt(InputAction.CallbackContext context);
         void OnOpenNotebook(InputAction.CallbackContext context);
+        void OnNextDialogueOption(InputAction.CallbackContext context);
+        void OnPreviousDialogueOption(InputAction.CallbackContext context);
     }
 }

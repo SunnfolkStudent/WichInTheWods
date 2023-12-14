@@ -152,7 +152,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hunter portrait_0: -4833489461976802803
+      hunter portrait_1: 8312615593104546230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
