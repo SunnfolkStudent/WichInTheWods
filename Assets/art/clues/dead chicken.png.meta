@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dead chicken_0: -1695871710933770420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
