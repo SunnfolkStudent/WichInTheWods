@@ -50,7 +50,8 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
 
     public void Interact()
     {
-        userInput = true;
+        if (!waitingForResponse)
+            userInput = true;
     }
 
     public void EndConversation()
@@ -160,8 +161,10 @@ public class NpcSpeaker : MonoBehaviour, Interaceble
     private IEnumerator WaitForUserInput()
     {
         while (!userInput || waitingForResponse)
+        {
             yield return null;
-        
+        }
+
         userInput = false;
     }
 }

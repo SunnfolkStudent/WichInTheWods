@@ -19,7 +19,6 @@ public class ButtonScript : MonoBehaviour
         
         Debug.Log(ButtonManager.buttonPressed);
         NpcSpeaker.CurrentSpeaker.waitingForResponse = false;
-        NpcSpeaker.CurrentSpeaker.userInput = true;
         ButtonManager.HideButtons();
     }
 }
