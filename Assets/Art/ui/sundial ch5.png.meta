@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f82193e82f222654c9bda9b7e1e46f36
+guid: 9605aa2ebd385db4496e1b0a923d4388
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      sundial ch5_0: 2904683880871185113
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
