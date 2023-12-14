@@ -141,14 +141,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: World_Objects
     originalName: 
-    pivot: {x: 2.1643836, y: -4.139785}
+    pivot: {x: 0.9404762, y: -4.139785}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 146
+      width: 336
       height: 93
     spriteID: 97b9c45a038815142b39709d68c4d366
     spriteBone: []
@@ -173,7 +173,7 @@ ScriptedImporter:
       cellRect:
         x: 4
         y: 385
-        width: 146
+        width: 336
         height: 93
       spriteId: 97b9c45a038815142b39709d68c4d366
     linkedCells: []
