@@ -4,7 +4,7 @@ using UnityEngine;
 using DIALOGUE;
 using TMPro;
 
-public class NpcSpeaker : MonoBehaviour, Interaceble
+public class NpcSpeaker : MonoBehaviour, Interactable
 {
     public static NpcSpeaker CurrentSpeaker { get; private set; }
 
