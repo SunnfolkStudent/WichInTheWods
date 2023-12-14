@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3f3cd06dca53452f9064516bebd354d
+guid: e6ac06878e7b8ab4f9007f816b25fd2c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -141,16 +141,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: World_Objects
     originalName: 
-    pivot: {x: 2.1643836, y: -4.139785}
+    pivot: {x: 0.9404762, y: -4.139785}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 146
+      width: 336
       height: 93
-    spriteID: a81a14bbbde8d45b88c30f2d8b7976b9
+    spriteID: 97b9c45a038815142b39709d68c4d366
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -173,9 +173,9 @@ ScriptedImporter:
       cellRect:
         x: 4
         y: 385
-        width: 146
+        width: 336
         height: 93
-      spriteId: a81a14bbbde8d45b88c30f2d8b7976b9
+      spriteId: 97b9c45a038815142b39709d68c4d366
     linkedCells: []
     parentIndex: -1
   platformSettings:
