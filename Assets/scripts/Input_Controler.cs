@@ -10,10 +10,12 @@ public class Input_Controler : MonoBehaviour
     [HideInInspector] public bool openNoteBook;
     [HideInInspector] public bool nextOption;
     [HideInInspector] public bool previousOption;
+    [HideInInspector] public bool bookDirection;
 
     private void Update()
     {
         moveDirection = _input.Player.move.ReadValue<Vector2>();
+        bookDirection = _input.Player.move.triggered;
         interactPressed = _input.Player.Interackt.WasPressedThisFrame();
         openNoteBook = _input.Player.openNotebook.WasPressedThisFrame();
         nextOption = _input.Player.NextDialogueOption.WasPressedThisFrame();

@@ -37,12 +37,12 @@ public class SwitchPage : MonoBehaviour
         }
         
 
-        /*if (_input.bookDirection)
+        if (_input.bookDirection)
         {
             _hasHapend = true;
         }
         
-        if (!_hasHapend) return;*/
+        if (!_hasHapend) return;
       
         
         if (_input.moveDirection.x > 0.5f && canFlip)
