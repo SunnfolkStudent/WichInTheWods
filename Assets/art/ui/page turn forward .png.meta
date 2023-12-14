@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      page turn forward _0: 3867106542336599392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

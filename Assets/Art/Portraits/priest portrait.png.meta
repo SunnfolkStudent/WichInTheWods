@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      priest portrait_0: 7367594469012833558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
