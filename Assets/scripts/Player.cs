@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -26,9 +27,11 @@ public class Player : MonoBehaviour
     private Vector3 targetPos;
 
     public Vector2 facing;
+    private bool notbokOpen;
+    
+    public static int indexCount;
 
-    
-    
+
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -41,6 +44,32 @@ public class Player : MonoBehaviour
         _inputAxis.x = _input.moveDirection.x;
         _inputAxis.y = _input.moveDirection.y;
         if (_input.interactPressed) Interact();
+        if (indexCount > 6)
+        {
+            indexCount = 6;
+        }
+        
+        
+        if (notbokOpen)
+        {
+            if (_input.openNoteBook)
+            {
+                SceneManager.UnloadSceneAsync("Notbok");
+                notbokOpen = false;
+                frozen = false;
+
+            }
+        }
+        else
+        {
+            if (_input.openNoteBook)
+            {
+                SceneManager.LoadScene("Notbok", LoadSceneMode.Additive);
+                notbokOpen = true;
+                frozen = true;
+            }
+            
+        }
     }
 
     private void FixedUpdate()
