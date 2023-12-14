@@ -21,7 +21,6 @@ public class Input_Controler : MonoBehaviour
         nextOption = _input.Player.NextDialogueOption.WasPressedThisFrame();
         previousOption = _input.Player.PreviousDialogueOption.WasPressedThisFrame();
     }
-
     private void Awake()
     {
         if (Instance == null)

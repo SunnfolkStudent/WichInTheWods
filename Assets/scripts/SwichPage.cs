@@ -7,7 +7,7 @@ public class SwitchPage : MonoBehaviour
     private bool canFlip = true;
     private GameObject _gameObject;
     
-    private Input_Controler _input;
+    //private Input_Controler _input;
    
     public GameObject[] background;
     public GameObject flipRight;
@@ -17,7 +17,7 @@ public class SwitchPage : MonoBehaviour
     void Start()
     {
         index = 0;
-        _input = GetComponent<Input_Controler>();
+        //_input = GetComponent<Input_Controler>();
     }
         
 
@@ -37,7 +37,7 @@ public class SwitchPage : MonoBehaviour
         }
         
 
-        if (_input.bookDirection)
+        if (Input_Controler.Instance.bookDirection)
         {
             _hasHapend = true;
         }
@@ -45,12 +45,12 @@ public class SwitchPage : MonoBehaviour
         if (!_hasHapend) return;
       
         
-        if (_input.moveDirection.x > 0.5f && canFlip)
+        if (Input_Controler.Instance.moveDirection.x > 0.5f && canFlip)
         {
             StartCoroutine(Next());
             _hasHapend = false;
         }
-        else if (_input.moveDirection.x < -0.5f && canFlip)
+        else if (Input_Controler.Instance.moveDirection.x < -0.5f && canFlip)
         {
             StartCoroutine(Previous());
             _hasHapend = false;

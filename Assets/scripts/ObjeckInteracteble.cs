@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class ObjeckInteracteble : MonoBehaviour, Interaceble
 {
+    public bool gotClueThisLevel;
     public void Interact()
     {
-        print("interacted");
-        Player.indexCount++;
+        if (!gotClueThisLevel)
+        {
+            print("interacted");
+            Player.indexCount++;
+        }
+        
     }
 }
