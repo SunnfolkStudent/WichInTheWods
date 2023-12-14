@@ -29,6 +29,7 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
     //Used for activating a choice.
     private static void Choices(string[] options)
     {
+        NpcSpeaker.CurrentSpeaker.text.text = "";
         ButtonManager.DisplayButtons(options);
         NpcSpeaker.CurrentSpeaker.waitingForResponse = true;
         NpcSpeaker.CurrentSpeaker.treatCommandAsDialogue = true;
