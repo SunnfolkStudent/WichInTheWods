@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clue notes_0: -6320158402736292627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
