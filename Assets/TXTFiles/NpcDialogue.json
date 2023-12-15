@@ -264,12 +264,7 @@
           "\"Perhaps we shall meet once again in the future, at least I hope so, for I wish good fortune upon you for giving me a chance\"",
           "Choices(\"Farewell Minerva\")",
           "\"Farewell Ser Knight, may fate smile upon us for the future.\"",
-          "NextScene()",
-          "Leave()"
-        ],
-        "dialogue2": [
-          "\"Farewell ser knight\"",
-          "Leave()"
+          "NextScene()"
         ]
       }
     }
