@@ -6,8 +6,7 @@ public class ObjeckInteracteble : MonoBehaviour, Interactable
     public static bool gotClueThisLevel;
     public PlayableDirector playableDirector;
     public SolsticeControler solsticeControler;
-
-    public SceneChanger sceneChanger;
+    
     public void Interact()
     {
         if (!gotClueThisLevel)
@@ -17,7 +16,7 @@ public class ObjeckInteracteble : MonoBehaviour, Interactable
             gotClueThisLevel = true;
             solsticeControler.SolsticChange();
             SolsticeControler.solIndex++;
-            sceneChanger.NextLevel();
+            SceneChanger.Instance.NextLevel();
         }
         
     }
