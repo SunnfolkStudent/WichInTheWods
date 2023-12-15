@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloak_0: 8813677622436840228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      church letter_0: -1363235957102195160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

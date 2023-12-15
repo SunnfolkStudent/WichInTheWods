@@ -52,7 +52,7 @@ ScriptedImporter:
     sRGBTexture: 1
     spriteMode: 2
     spriteExtrude: 1
-    spriteMeshType: 1
+    spriteMeshType: 0
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
     spritePixelsToUnits: 32
@@ -115,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638381516656860350
+  platformSettingsDirtyTick: 638382437021658737
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -377,14 +377,15 @@ ScriptedImporter:
     vertices: []
     spritePhysicsOutline:
     - outline:
-      - {x: -64.53128, y: 33.198013}
-      - {x: -64.91861, y: -71.92498}
-      - {x: -31.883636, y: -72.23562}
-      - {x: -32.083344, y: -104}
-      - {x: 30.354187, y: -104}
-      - {x: 29.958038, y: -72.33441}
-      - {x: 63.050232, y: -71.80092}
-      - {x: 63.374878, y: 33.635635}
+      - {x: -17, y: 104}
+      - {x: -70, y: 62}
+      - {x: -37, y: 24}
+      - {x: 25, y: -5}
+      - {x: -70, y: -76}
+      - {x: 34, y: -104}
+      - {x: 70, y: -82}
+      - {x: 70, y: 60}
+      - {x: 24, y: 104}
     indices: 
     edges: []
     tessellationDetail: 0
