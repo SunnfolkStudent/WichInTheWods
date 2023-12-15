@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObjeckInteracteble : MonoBehaviour, Interactable
 {
-    public bool gotClueThisLevel;
+    public static bool gotClueThisLevel;
     public void Interact()
     {
         if (!gotClueThisLevel)
