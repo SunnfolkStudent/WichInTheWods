@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mayor1
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  portrait: {fileID: 7505099669388856408, guid: 16ffc530946512240ba32b90d2a19257, type: 3}
+  portrait: {fileID: 1641659521105787397, guid: 19a6c780b15a4764380e55542bcfe5ba, type: 3}
   npcName: Mayor1

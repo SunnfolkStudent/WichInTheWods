@@ -1,19 +1,23 @@
+using System.Collections;
 using UnityEngine;
 
 public class SwitchPage : MonoBehaviour
 {
-    private bool _hasHapend;
+    [SerializeField]private bool _hasHapend;
+    private bool canFlip = true;
     private GameObject _gameObject;
     
-    private Input_Controler _input;
+    //private Input_Controler _input;
    
     public GameObject[] background;
+    public GameObject flipRight;
+    public GameObject flipLeft;
     public int index;
 
     void Start()
     {
         index = 0;
-        _input = GetComponent<Input_Controler>();
+        //_input = GetComponent<Input_Controler>();
     }
         
 
@@ -31,48 +35,64 @@ public class SwitchPage : MonoBehaviour
         {
             background[0].gameObject.SetActive(true);
         }
+        
 
-        if (!_hasHapend)
+        if (Input_Controler.Instance.bookDirection)
         {
             _hasHapend = true;
-            switch (_input.moveDirection.x)
-            {
-                case > 0:
-                    Next();
-                    break;
-                case < 0: 
-                    Previous(); 
-                    break;
-            }
-        }
-        else if (_input.moveDirection.x == 0)
-        {
-            _hasHapend = false;
         }
         
+        if (!_hasHapend) return;
+      
+        
+        if (Input_Controler.Instance.moveDirection.x > 0.5f && canFlip)
+        {
+            StartCoroutine(Next());
+            _hasHapend = false;
+        }
+        else if (Input_Controler.Instance.moveDirection.x < -0.5f && canFlip)
+        {
+            StartCoroutine(Previous());
+            _hasHapend = false;
+        }
     }
 
-    private void Next()
+    private IEnumerator Next()
     {
+        if (index == Player.indexCount) yield break;
         index += 1;
-    
+        
+        flipRight.gameObject.SetActive(true);
+        canFlip = false;
+        yield return new WaitForSeconds(0.5f);
+        canFlip = true;
+        flipRight.gameObject.SetActive(false);
+        
         foreach (var t in background)
         {
             t.gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
+        print("Heyo");
     }
 
-    private void Previous()
+    private IEnumerator Previous()
     {
+        if (index == 0) yield break;
         index -= 1;
+        
+        flipLeft.gameObject.SetActive(true);
+        canFlip = false;
+        yield return new WaitForSeconds(0.5f);
+        canFlip = true;
+        flipLeft.gameObject.SetActive(false);
     
         for(int i = 0 ; i < background.Length; i++)
         {
             background[i].gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
-        
+        print("Heyhoooo");
     }
 
     

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Witch
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  portrait: {fileID: 0}
+  portrait: {fileID: 8483708553598138486, guid: 570b7798aa81c0a4aa057dd85b1471b5, type: 3}
   npcName: Witch
