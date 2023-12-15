@@ -6,7 +6,7 @@ using System.IO;
 public class AudioLoader : MonoBehaviour
 {
     public AudioSource audioSource;
-    public string voiceLinesFolderPath = "Assets/audio/VoiceLines"; // Path to VoiceLines folder
+    public string voiceLinesFolderPath = "Assets/audio/VoiceLines";
 
     Dictionary<string, List<AudioClip>> voiceLinesDictionary = new Dictionary<string, List<AudioClip>>();
 
@@ -34,12 +34,12 @@ public class AudioLoader : MonoBehaviour
 
             string[] audioFiles = Directory.GetFiles(subfolder, "*.wav");
 
-            // Sort audioFiles array by file name
+            
             Array.Sort(audioFiles, StringComparer.InvariantCulture);
 
             foreach (string audioFile in audioFiles)
             {
-                // Load audio clip
+                
                 AudioClip clip = LoadAudioClip(audioFile);
                 if (clip != null)
                 {
@@ -47,25 +47,24 @@ public class AudioLoader : MonoBehaviour
                 }
             }
 
-            // Add to dictionary
+            
             voiceLinesDictionary.Add(folderName, audioClips);
         }
 
-        // Example usage:
-        // Access the dictionary using folder name as key
+        
         if (voiceLinesDictionary.ContainsKey("YourSubfolderName"))
         {
             List<AudioClip> clipsInSubfolder = voiceLinesDictionary["YourSubfolderName"];
-            // Use the audio clips as needed
+            
         }
     }
 
     AudioClip LoadAudioClip(string filePath)
     {
-        // Load audio clip using Unity's AudioClip.Create if using WAV files
+        
         byte[] audioData = File.ReadAllBytes(filePath);
 
-        // Convert the byte array to float array (assuming 16-bit PCM WAV)
+        
         float[] floatData = new float[audioData.Length / 2];
         for (int i = 0; i < floatData.Length; i++)
         {
