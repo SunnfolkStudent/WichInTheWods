@@ -92,6 +92,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDirection: {x: 0, y: 0}
   interactPressed: 0
+  openNoteBook: 0
+  nextOption: 0
+  previousOption: 0
+  bookDirection: 0
 --- !u!114 &2157598689993758222
 MonoBehaviour:
   m_ObjectHideFlags: 0
