@@ -8,9 +8,10 @@ public class SceneChanger : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.UnloadSceneAsync(sceneNumber);
+        SceneManager.LoadScene(sceneNumber+1, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(sceneBuildIndex:sceneNumber);
         sceneNumber++;
-        SceneManager.LoadScene(sceneNumber, LoadSceneMode.Additive);
+       
     }
     
     
