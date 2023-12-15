@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e83a587f03689094b9f25af1bef994e0
+guid: 42624b205eb972044b6d94a7cccb7f69
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -139,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Basic winter tree and path tilesets
+  - name: kyling
     originalName: 
-    pivot: {x: 0.61456954, y: -0.022140222}
+    pivot: {x: 0.53333336, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1510
-      height: 1084
-    spriteID: 91a50dda6efb7cf418bf8db5ce8b09c6
+      width: 15
+      height: 15
+    spriteID: 8ef84a92c700a3049bc03f44c3a9eeec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,20 +162,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1382476102
-    name: Basic winter tree and path tilesets
+    guid: 862207694
+    name: kyling
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Basic winter tree and path tilesets
+    - name: kyling
       frameIndex: 0
       cellRect:
-        x: 32
-        y: 24
-        width: 1510
-        height: 1084
-      spriteId: 91a50dda6efb7cf418bf8db5ce8b09c6
+        x: 8
+        y: 0
+        width: 15
+        height: 15
+      spriteId: 8ef84a92c700a3049bc03f44c3a9eeec
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -203,4 +203,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 1920, y: 1080}
+  canvasSize: {x: 32, y: 32}

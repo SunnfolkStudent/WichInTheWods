@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03f7495e7f467144b938e6b01dd8390d
+guid: 3ebb3731ad252884fbcd74d13cd83016
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -139,7 +139,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Basic tree and winter tileset
+  - name: Trees and winter village
     originalName: 
     pivot: {x: 0.61456954, y: -0.022140222}
     alignment: 9
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 4
       width: 1510
       height: 1084
-    spriteID: 89bbefae2c3f9d244afb0ae91a7343b6
+    spriteID: 9e0ebe5331bb56447afc903c45f4a8b3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,20 +162,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1072333186
-    name: Basic tree and winter tileset
+    guid: 473167545
+    name: Trees and winter village
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Basic tree and winter tileset
+    - name: Trees and winter village
       frameIndex: 0
       cellRect:
         x: 32
         y: 24
         width: 1510
         height: 1084
-      spriteId: 89bbefae2c3f9d244afb0ae91a7343b6
+      spriteId: 9e0ebe5331bb56447afc903c45f4a8b3
     linkedCells: []
     parentIndex: -1
   platformSettings:
