@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using DIALOGUE;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
         database.AddCommand("Choices", new Action<string[]>(Choices));
         
         database.AddCommand("DeleteLines",new Action<string[]>(DeleteLines));
+        
+        database.AddCommand("CheckRequirements",new Action<string[]>(CheckRequirements));
         
         database.AddCommand("Leave", new Action(LeaveConversation));
         
@@ -27,10 +30,27 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
     }
 
     //Used for activating a choice.
+    //Parameters are the choices you want to have. Max 4
     private static void Choices(string[] options)
     {
+        if (NpcSpeaker.CurrentSpeaker.lockedOptions > 0)
+        {
+            int newSize = options.Length - NpcSpeaker.CurrentSpeaker.lockedOptions;
+
+            string[] limitedOptions = new string[newSize];
+            Array.Copy(options, limitedOptions, newSize);
+
+            // Use truncatedOptions for further processing or assign it back to options if needed
+            ButtonManager.DisplayButtons(limitedOptions);
+
+            NpcSpeaker.CurrentSpeaker.lockedOptions = 0;
+        }
+        else
+        {
+            ButtonManager.DisplayButtons(options);
+        }
+        
         NpcSpeaker.CurrentSpeaker.text.text = "";
-        ButtonManager.DisplayButtons(options);
         NpcSpeaker.CurrentSpeaker.waitingForResponse = true;
         NpcSpeaker.CurrentSpeaker.treatCommandAsDialogue = true;
     }
@@ -53,6 +73,52 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
         }
     }
 
+    //The arguments are as follows arg1 = Datatype you want to grab from Savegame.json, arg2 = key you want to grab the value from
+    //arg3 = operator you want to use to check the datavalue, arg4 = the integer you want to compare the datavalue to
+    //arg5 = the amount of options you want to lock out based on this.
+    private static void CheckRequirements(string[] dataCheckparameters)
+    {
+        foreach (string dataParameter in dataCheckparameters)
+        {
+            Debug.Log(dataParameter);
+        }
+        Dictionary<string, object> dataDict = SaveFileHandler.GetSaveFile(dataCheckparameters[0]);
+
+        int requiredVariable = int.Parse(dataDict[dataCheckparameters[1]].ToString());
+
+        bool conditionMet = false;
+
+        switch (dataCheckparameters[2])
+        {
+            case "==":
+                conditionMet = requiredVariable == int.Parse(dataCheckparameters[3]);
+                break;
+            case "!=":
+                conditionMet = requiredVariable != int.Parse(dataCheckparameters[3]);
+                break;
+            case ">":
+                conditionMet = requiredVariable > int.Parse(dataCheckparameters[3]);
+                break;
+            case "<":
+                conditionMet = requiredVariable < int.Parse(dataCheckparameters[3]);
+                break;
+            case ">=":
+                conditionMet = requiredVariable >= int.Parse(dataCheckparameters[3]);
+                break;
+            case "<=":
+                conditionMet = requiredVariable <= int.Parse(dataCheckparameters[3]);
+                break;
+            default:
+                break;
+        }
+
+        if (!conditionMet)
+        {
+            NpcSpeaker.CurrentSpeaker.lockedOptions = int.Parse(dataCheckparameters[4]);
+        }
+    }
+
+    //Ends the conversation allowing you to move around again
     private static void LeaveConversation()
     {
         NpcSpeaker.CurrentSpeaker.EndConversation();

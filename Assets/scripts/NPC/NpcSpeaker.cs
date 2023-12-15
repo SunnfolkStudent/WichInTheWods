@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DIALOGUE;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class NpcSpeaker : MonoBehaviour, Interactable
 {
@@ -19,6 +20,8 @@ public class NpcSpeaker : MonoBehaviour, Interactable
     public int currentDialogueLine;
     [HideInInspector]
     public bool treatCommandAsDialogue;
+    [HideInInspector] 
+    public int lockedOptions;
     
     private bool _conversationRunning;
     

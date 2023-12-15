@@ -252,6 +252,7 @@
           "\"How much faith must you have to blindly follow your masters and condemn any who would practice magic regardless of what they do with that gift? I swear that I am no threat to you, I have no wish to harm anyone\"",
           "Choices(\"Even if I believed you I can’t allow you to leave, I swore an oath to the church and must follow their word\")",
           "\"You shouldn’t let your life be lived as a weapon but live it as you wish. I shall ask once more, let me leave and you’ll see that not all of the church's words hold truth, or try to bring me in and prove yourself nought more than a weapon to be used.\"",
+          "CheckRequirements(\"Player\" \"GoodClues\" \">\" \"5\" \"1\")",
           "Choices(\"I can’t let you go, you are a witch and lies and tricks are your craft, I shall take you in and you shall face judgment.\" \"Perhaps, it is time to think for myself, I I’m not sure what I’ll tell everyone but I suppose I can think of something\")",
           "DeleteLines(\"1\" \"4\" \"5\" \"6\")",
           "\"Very well, then you shall be forced to best me, weapon.*Fight*\"",
