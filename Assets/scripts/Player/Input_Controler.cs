@@ -11,7 +11,7 @@ public class Input_Controler : MonoBehaviour
     [HideInInspector] public bool nextOption;
     [HideInInspector] public bool previousOption;
     [HideInInspector] public bool bookDirection;
-
+    
     private void Update()
     {
         moveDirection = _input.Player.move.ReadValue<Vector2>();

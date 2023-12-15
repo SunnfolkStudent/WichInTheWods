@@ -1,8 +1,12 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class ObjeckInteracteble : MonoBehaviour, Interactable
 {
     public static bool gotClueThisLevel;
+    public PlayableDirector playableDirector;
+    public SolsticeControler solsticeControler;
+    
     public void Interact()
     {
         if (!gotClueThisLevel)
@@ -10,6 +14,9 @@ public class ObjeckInteracteble : MonoBehaviour, Interactable
             print("interacted");
             Player.indexCount++;
             gotClueThisLevel = true;
+            solsticeControler.SolsticChange();
+            SolsticeControler.solIndex++;
+            SceneChanger.Instance.NextLevel();
         }
         
     }
