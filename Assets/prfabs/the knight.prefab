@@ -16,13 +16,17 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 32d46bbccae299e4dab2d1f9722216d1, type: 2}
+    - target: {fileID: 3626916397498700004, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.14110017
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: c9416cc0ab912204da94204ffcd77fa6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -152,8 +156,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.484375
+  m_Offset: {x: 0, y: -0.05}
+  m_Radius: 0.4
 --- !u!50 &8918151737241143249
 Rigidbody2D:
   serializedVersion: 4

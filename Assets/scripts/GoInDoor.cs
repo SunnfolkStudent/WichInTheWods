@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour, Interactable
 {
@@ -8,11 +9,10 @@ public class Door : MonoBehaviour, Interactable
     public PlayableDirector director; 
     public void Interact()
     {
-        if (!_isInHouse)
+        if (_isInHouse)
         {
-            print("goInHouse");
+            
             _isInHouse = true;
-            director.Play();
         }
         else if(_isInHouse)
         {
