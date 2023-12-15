@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4323d447148626e498c94ae5b6237ec4
+guid: 1c42b5751dba64ccb9354403fa3cd862
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -91,7 +91,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -103,7 +103,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -115,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638378867076410278
+  platformSettingsDirtyTick: 638382456483442210
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Poster
+  - name: Snow forest land
     originalName: 
-    pivot: {x: 0.49940687, y: -0.0059121624}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 843
-      height: 1184
-    spriteID: 68914e9d4b1cad04db301bcbced5e9e1
+      width: 1920
+      height: 1080
+    spriteID: 3c103121cb1d24ce3aa9062ee2fa4cf1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,23 +159,43 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData: []
+  spriteSheetImportData:
+  - name: Snow forest land_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 04f9bd926a9e64481b3aa5fbf509f0d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 1055407667
-    name: Poster
+    guid: -957091841
+    name: Snow forest land
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Poster
+    - name: Snow forest land
       frameIndex: 0
       cellRect:
         x: 0
-        y: 7
-        width: 843
-        height: 1184
-      spriteId: 68914e9d4b1cad04db301bcbced5e9e1
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 3c103121cb1d24ce3aa9062ee2fa4cf1
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -203,4 +223,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 842, y: 1191}
+  canvasSize: {x: 1920, y: 1080}
