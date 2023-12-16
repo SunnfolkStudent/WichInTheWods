@@ -11,10 +11,17 @@ public class VoiceLinesLoader : MonoBehaviour
     public AudioSource audioSource;
     public string voiceLinesFolderPath = "Assets/audio/VoiceLines";
 
-    Dictionary<string, List<AudioClip>> voiceLinesDictionary = new Dictionary<string, List<AudioClip>>();
+    public Dictionary<string, List<AudioClip>> voiceLinesDictionary = new Dictionary<string, List<AudioClip>>();
 
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+            DestroyImmediate(gameObject);
+        
         audioSource = audioSource.GetComponent<AudioSource>();
         
         LoadVoiceLines();

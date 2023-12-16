@@ -159,6 +159,18 @@ public static class NpcDialogueHandler
     
     public static void DeleteLines(int deleteStart, int deleteAmount)
     {
+        if (deleteStart == 1)
+        {
+            Debug.Log("Deletstart1");
+            VoiceLinesLoader.instance.voiceLinesDictionary[NpcSpeaker.CurrentSpeaker.npc.npcName].RemoveRange(6, 4);
+        }
+
+        else if (deleteStart == 5)
+        {
+            Debug.Log("Deletestart5");
+            VoiceLinesLoader.instance.voiceLinesDictionary[NpcSpeaker.CurrentSpeaker.npc.npcName].RemoveRange(10, 6);
+        }
+        
         deleteStart += NpcSpeaker.CurrentSpeaker.currentDialogueLine;
 
         NpcSpeaker.CurrentSpeaker.dialogueDict[NpcSpeaker.CurrentSpeaker.whichDialogue].RemoveRange(deleteStart, deleteAmount);
