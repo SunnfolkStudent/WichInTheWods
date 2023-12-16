@@ -17,8 +17,19 @@ public class ButtonScript : MonoBehaviour
         //This is a workaround as unity wont allow a method with an enum as a parameter to be attached to a button
         ButtonManager.buttonPressed = buttonPressed;
         
-        Debug.Log(ButtonManager.buttonPressed);
-        NpcSpeaker.CurrentSpeaker.waitingForResponse = false;
+        VoiceLinesLoader.instance.PlayAudioClip(NpcSpeaker.CurrentSpeaker.npc.npcName, NpcSpeaker.CurrentSpeaker.audioClipCounter);
         ButtonManager.HideButtons();
+        
+        StartCoroutine(WaitForAudio());
+        
+        NpcSpeaker.CurrentSpeaker.waitingForResponse = false;
+    }
+
+    IEnumerator WaitForAudio()
+    {
+        while (VoiceLinesLoader.instance.audioSource.isPlaying)
+        {
+            yield return null;
+        }
     }
 }
