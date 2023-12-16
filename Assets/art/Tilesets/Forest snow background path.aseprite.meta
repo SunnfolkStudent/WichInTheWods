@@ -427,10 +427,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 235
-      y: 48
-      width: 224
-      height: 134
+      x: 1021
+      y: 345
+      width: 282
+      height: 172
     spriteID: 8feb75ab5c4334cf9a8e591ef626b0cb
     spriteBone: []
     spriteOutline: []
@@ -447,10 +447,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 936
-      y: 4
-      width: 171
-      height: 189
+      x: 235
+      y: 48
+      width: 224
+      height: 134
     spriteID: 8c07aa2e317254c788b7499b7f33e587
     spriteBone: []
     spriteOutline: []
@@ -467,11 +467,31 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
+      x: 936
+      y: 4
+      width: 171
+      height: 189
+    spriteID: 7f5ae61c7b634475096b313cfba4f967
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Forest snow background path_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
       x: 1138
       y: 32
       width: 292
       height: 158
-    spriteID: 7f5ae61c7b634475096b313cfba4f967
+    spriteID: d640eee0ff0d747678d171ad8e2bbb5e
     spriteBone: []
     spriteOutline: []
     vertices: []
