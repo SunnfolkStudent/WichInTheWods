@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
     private bool _isMoving;
     private bool _interactable;
-    [HideInInspector] public static bool frozen;
+    [HideInInspector] public static bool frozen = true;
 
     private Vector2 _inputAxis;
     private Vector3 targetPos;
