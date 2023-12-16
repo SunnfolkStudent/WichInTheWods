@@ -22,6 +22,8 @@ public class NpcSpeaker : MonoBehaviour, Interactable
     public bool treatCommandAsDialogue;
     [HideInInspector] 
     public int lockedOptions;
+    [HideInInspector] 
+    public int audioClipCounter;
     
     private bool _conversationRunning;
     
@@ -59,6 +61,7 @@ public class NpcSpeaker : MonoBehaviour, Interactable
 
     public void EndConversation()
     {
+        audioClipCounter--;
         StopCoroutine(_speakingCoroutine);
         text.text = "";
         _speakingCoroutine = null;
@@ -98,6 +101,7 @@ public class NpcSpeaker : MonoBehaviour, Interactable
             if (line.hasDialogue || treatCommandAsDialogue)
             {
                 yield return WaitForUserInput();
+                audioClipCounter++;
                 treatCommandAsDialogue = false;
             }
         }
@@ -139,6 +143,8 @@ public class NpcSpeaker : MonoBehaviour, Interactable
     
     IEnumerator BuildDialogue(string dialogue, bool append = false)
     {
+        VoiceLinesLoader.instance.PlayAudioClip(npc.npcName, audioClipCounter);
+        
         if (!append)
             _architect.Build(dialogue);
         else

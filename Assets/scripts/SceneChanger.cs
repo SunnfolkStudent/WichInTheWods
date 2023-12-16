@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,13 +25,15 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(sceneNumber+1, LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync(sceneBuildIndex:sceneNumber);
         sceneNumber++;
-       
     }
 
-    public void StartGame()
+    public IEnumerator StartGame()
     {
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("Player");
-        
+        SceneManager.LoadScene("farm", LoadSceneMode.Additive);
+        SceneManager.LoadScene("ChurchLeter", LoadSceneMode.Additive);
+        yield break;
     }
 
     public void GoInHouse()
@@ -41,6 +44,6 @@ public class SceneChanger : MonoBehaviour
     
     public void Exit()
     {
-        
+        Application.Quit();
     }
 }

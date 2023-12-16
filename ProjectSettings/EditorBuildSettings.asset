@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menues_Other/Notbok.unity
-    guid: bf89fa99282cb6f478da82fef90eb9a2
+    path: Assets/Scenes/Menues_Other/mainMenue.unity
+    guid: 439c04e136a8e4143843aadd883966a4
   - enabled: 1
     path: Assets/Scenes/Levels/farm.unity
     guid: 2ebeed867b6c8dd4b8a68f5055abb5aa
@@ -23,5 +23,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/darkForest.unity
     guid: e32b77fce10603e448e8db30d53bff79
+  - enabled: 1
+    path: Assets/Scenes/ChurchLeter.unity
+    guid: c5d5de15a21dad448957e18f97e032d3
+  - enabled: 1
+    path: Assets/Scenes/Player.unity
+    guid: 7295ef7329b16d949801260f79d68811
+  - enabled: 1
+    path: Assets/Scenes/Menues_Other/Notbok.unity
+    guid: bf89fa99282cb6f478da82fef90eb9a2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

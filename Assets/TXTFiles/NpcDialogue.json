@@ -245,7 +245,6 @@
       "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
-          "\"...\"",
           "Choices(\"So you were the witch, disguising yourself as a beggar to avoid suspicion, clever\")",
           "\"I’m sorry for my deception, but I’m sure you can understand the need for it with you trying to capture me. I will tell you now I shall not be going with you.\"",
           "Choices(\"You won’t have a choice, if need be I’ll take you in by force. It would be best for you to simply surrender yourself\")",
@@ -264,12 +263,7 @@
           "\"Perhaps we shall meet once again in the future, at least I hope so, for I wish good fortune upon you for giving me a chance\"",
           "Choices(\"Farewell Minerva\")",
           "\"Farewell Ser Knight, may fate smile upon us for the future.\"",
-          "NextScene()",
-          "Leave()"
-        ],
-        "dialogue2": [
-          "\"Farewell ser knight\"",
-          "Leave()"
+          "NextScene()"
         ]
       }
     }

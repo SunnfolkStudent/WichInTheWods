@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
   m_Name: Witch
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -6393442736178164454, guid: faf89220eef6c864b9f603d27b54c2de, type: 3}
   portrait: {fileID: 8483708553598138486, guid: 570b7798aa81c0a4aa057dd85b1471b5, type: 3}
   npcName: Witch
