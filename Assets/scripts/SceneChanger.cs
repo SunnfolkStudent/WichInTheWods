@@ -27,7 +27,12 @@ public class SceneChanger : MonoBehaviour
         sceneNumber++;
     }
 
-    public IEnumerator StartGame()
+    public void StartGame()
+    {
+        StartCoroutine(IStartGame());
+    }
+    
+    public IEnumerator IStartGame()
     {
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("Player");

@@ -73,7 +73,6 @@ public class SwitchPage : MonoBehaviour
             t.gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
-        print("Heyo");
     }
 
     private IEnumerator Previous()
@@ -92,7 +91,6 @@ public class SwitchPage : MonoBehaviour
             background[i].gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
-        print("Heyhoooo");
     }
 
     
