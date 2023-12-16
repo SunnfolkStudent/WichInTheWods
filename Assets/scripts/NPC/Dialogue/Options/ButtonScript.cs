@@ -21,8 +21,6 @@ public class ButtonScript : MonoBehaviour
         ButtonManager.HideButtons();
         
         StartCoroutine(WaitForAudio());
-        
-        NpcSpeaker.CurrentSpeaker.waitingForResponse = false;
     }
 
     IEnumerator WaitForAudio()
@@ -31,5 +29,8 @@ public class ButtonScript : MonoBehaviour
         {
             yield return null;
         }
+
+        NpcSpeaker.CurrentSpeaker.userInput = true;
+        NpcSpeaker.CurrentSpeaker.waitingForResponse = false;
     }
 }

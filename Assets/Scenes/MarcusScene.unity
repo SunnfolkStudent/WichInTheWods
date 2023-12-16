@@ -1320,6 +1320,7 @@ MonoBehaviour:
   currentDialogueLine: 0
   treatCommandAsDialogue: 0
   lockedOptions: 0
+  audioClipCounter: 0
   npc: {fileID: 11400000, guid: fb7c714683c17f5499fe83c8091f3099, type: 2}
   text: {fileID: 41924576}
 --- !u!61 &1160140299

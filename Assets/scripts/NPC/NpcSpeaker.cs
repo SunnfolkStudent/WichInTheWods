@@ -61,6 +61,7 @@ public class NpcSpeaker : MonoBehaviour, Interactable
 
     public void EndConversation()
     {
+        audioClipCounter--;
         StopCoroutine(_speakingCoroutine);
         text.text = "";
         _speakingCoroutine = null;
@@ -99,8 +100,8 @@ public class NpcSpeaker : MonoBehaviour, Interactable
 
             if (line.hasDialogue || treatCommandAsDialogue)
             {
-                audioClipCounter++;
                 yield return WaitForUserInput();
+                audioClipCounter++;
                 treatCommandAsDialogue = false;
             }
         }
