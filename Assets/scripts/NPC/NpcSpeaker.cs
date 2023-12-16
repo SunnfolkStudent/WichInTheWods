@@ -33,6 +33,7 @@ public class NpcSpeaker : MonoBehaviour, Interactable
     private Coroutine _speakingCoroutine;
     
     public NpcScrub npc;
+    [HideInInspector] 
     public TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class NpcSpeaker : MonoBehaviour, Interactable
         _architect = new TextArchitect(text);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = npc.sprite;
+        text = DialogueBoxManager.Instance.DialogueBox;
     }
 
     // Update is called once per frame

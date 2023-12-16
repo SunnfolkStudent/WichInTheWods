@@ -11,6 +11,7 @@ public class DialogueBoxManager : MonoBehaviour
     private List<GameObject> dialogueUI = new List<GameObject>();
     public Image portraitNpcImage;
     public TextMeshProUGUI nameTextBox;
+    public TextMeshProUGUI DialogueBox;
 
     private void Start()
     {

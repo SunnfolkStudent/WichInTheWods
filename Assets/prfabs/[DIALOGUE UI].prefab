@@ -964,6 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portraitNpcImage: {fileID: 4936052010718201752}
   nameTextBox: {fileID: 8568455414044653598}
+  DialogueBox: {fileID: 4733677478015542488}
 --- !u!1 &4611094233788574321
 GameObject:
   m_ObjectHideFlags: 0
