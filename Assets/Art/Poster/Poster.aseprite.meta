@@ -141,15 +141,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Poster
     originalName: 
-    pivot: {x: 0.49940687, y: -0.0059121624}
+    pivot: {x: 0.48786125, y: 0.11119403}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 843
-      height: 1184
+      width: 865
+      height: 1340
     spriteID: 68914e9d4b1cad04db301bcbced5e9e1
     spriteBone: []
     spriteOutline: []
@@ -171,10 +171,10 @@ ScriptedImporter:
     - name: Poster
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 7
-        width: 843
-        height: 1184
+        x: -1
+        y: -149
+        width: 865
+        height: 1340
       spriteId: 68914e9d4b1cad04db301bcbced5e9e1
     linkedCells: []
     parentIndex: -1
