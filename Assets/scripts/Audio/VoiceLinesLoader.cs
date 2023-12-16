@@ -3,8 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-public class AudioLoader : MonoBehaviour
+public class VoiceLinesLoader : MonoBehaviour
 {
+    public static VoiceLinesLoader instance { get; private set; }
+    
+    
     public AudioSource audioSource;
     public string voiceLinesFolderPath = "Assets/audio/VoiceLines";
 
@@ -16,10 +19,12 @@ public class AudioLoader : MonoBehaviour
         
         LoadVoiceLines();
         
-        Debug.Log(voiceLinesDictionary["Witch"].Count);
+        Debug.Log("Loaded");
+    }
 
-        audioSource.clip = voiceLinesDictionary["Beggar"][0];
-        audioSource.pitch = 1.0f;
+    public void PlayAudioClip(string character, int audioClipIndex)
+    {
+        audioSource.clip = voiceLinesDictionary[character][audioClipIndex];
         audioSource.Play();
     }
 
