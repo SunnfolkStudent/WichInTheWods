@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
-  m_Name: Guard1
+  m_Name: Hunter
   m_EditorClassIdentifier: 
-  sprite: {fileID: 2893641088436872786, guid: 8c7f6879cefaf71478fe346c1ff3d894, type: 3}
-  portrait: {fileID: 7337067009248657747, guid: 35236246e5247dd43bc96bfae0d04e84, type: 3}
-  npcName: Guard1
+  sprite: {fileID: -1659564853161956440, guid: fcf5171fb9356124587b0a6e401a1f4f, type: 3}
+  portrait: {fileID: -4833489461976802803, guid: ce7fc91629b4e604aaea5aab96e75911, type: 3}
+  npcName: Hunter
