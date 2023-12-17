@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using DIALOGUE;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CmdDatabaseExtensionOne : CMD_Database_Extension
 {
@@ -140,6 +141,6 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
     //Used if you want to move to a different scene.
     private static void NextScene(string nextSceneInGame)
     {
-
+        SceneManager.LoadScene(nextSceneInGame);
     }
 }
