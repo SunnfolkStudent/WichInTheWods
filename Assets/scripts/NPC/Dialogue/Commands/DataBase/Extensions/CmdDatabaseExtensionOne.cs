@@ -16,6 +16,8 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
         
         database.AddCommand("CheckRequirements",new Action<string[]>(CheckRequirements));
         
+        database.AddCommand("GoodClue",new Action(UpdateGoodClues));
+        
         database.AddCommand("Leave", new Action(LeaveConversation));
         
         database.AddCommand("NextDialogue",new Action(NextDialogue));
@@ -116,6 +118,11 @@ public class CmdDatabaseExtensionOne : CMD_Database_Extension
         {
             NpcSpeaker.CurrentSpeaker.lockedOptions = int.Parse(dataCheckparameters[4]);
         }
+    }
+
+    private static void UpdateGoodClues()
+    {
+        SaveFileHandler.IncrementSaveData("Player", "GoodClues", 1);
     }
 
     //Ends the conversation allowing you to move around again
