@@ -29,22 +29,31 @@ public class SceneChanger : MonoBehaviour
         StartCoroutine(INextLevel());
     }
 
+    public void NextLevelFromHouse()
+    {
+        StartCoroutine(INextLevelFromHouse());
+    }
+
     public IEnumerator INextLevel()
     {
         yield return new WaitForSeconds(2);
         playerTransform.position = Vector3.zero; 
         SceneManager.LoadScene(sceneNumber+1, LoadSceneMode.Additive);
-        if (SceneManager.GetActiveScene().name == "insideRom")
-        {
-            SceneManager.UnloadSceneAsync("insideRom");
-        }
-        else
-        {
-             SceneManager.UnloadSceneAsync(sceneNumber);
-        }
+        SceneManager.UnloadSceneAsync(sceneNumber);
         sceneNumber++;
         yield break;
     }
+
+    public IEnumerator INextLevelFromHouse()
+    {
+        yield return new WaitForSeconds(2);
+        playerTransform.position = Vector3.zero; 
+        SceneManager.LoadScene(sceneNumber+1, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("insideRom");
+        sceneNumber++;
+        yield break;
+    }
+    
 
     public void StartGame()
     {

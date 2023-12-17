@@ -93,7 +93,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -105,7 +105,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -115,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638384250234280647
+  platformSettingsDirtyTick: 638384504160692856
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,18 +139,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: farmer
+  - name: Layer 3
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 42
+      width: 22
+      height: 30
+    spriteID: 13dc68c5ae107fa4ab6c56893544d396
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 42}
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.50000006, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 80
+      width: 22
+      height: 30
+    spriteID: 8c7ad19ae04af2543bc1729a25bd7cf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 80}
+  - name: Layer 6
+    originalName: 
+    pivot: {x: -0.075, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 86
+      width: 40
       height: 30
-    spriteID: deb53ebf2ffceb24480c6fab90048f41
+    spriteID: bfeb604c2ee945c40a48c20cfa139f33
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,20 +202,54 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1899751393
-    name: farmer
-    layerFlags: 0
+    guid: 1317221950
+    name: Layer 3
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: farmer
+    - name: Layer 3
       frameIndex: 0
       cellRect:
         x: 5
         y: 0
-        width: 86
+        width: 22
         height: 30
-      spriteId: deb53ebf2ffceb24480c6fab90048f41
+      spriteId: 13dc68c5ae107fa4ab6c56893544d396
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: 1317223934
+    name: Layer 4
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 4
+      frameIndex: 0
+      cellRect:
+        x: 37
+        y: 0
+        width: 22
+        height: 30
+      spriteId: 8c7ad19ae04af2543bc1729a25bd7cf9
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: 1317223143
+    name: Layer 6
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 6
+      frameIndex: 0
+      cellRect:
+        x: 51
+        y: 0
+        width: 40
+        height: 30
+      spriteId: bfeb604c2ee945c40a48c20cfa139f33
     linkedCells: []
     parentIndex: -1
   platformSettings:

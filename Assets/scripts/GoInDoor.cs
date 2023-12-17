@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
@@ -30,5 +31,9 @@ public class Door : MonoBehaviour, Interactable
             _isInHouse = false;
         }
         
+        
+        
     }
+
+    
 }

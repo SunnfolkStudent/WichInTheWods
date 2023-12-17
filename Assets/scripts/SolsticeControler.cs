@@ -31,4 +31,13 @@ public class SolsticeControler : MonoBehaviour
         SceneChanger.Instance.NextLevel();
         
     }
+    public void GoToNextLevelFromHousee()
+    {
+        playableDirector.Play();
+        Player.indexCount++;
+        solIndex++;
+        print("solIndex");
+        SceneChanger.Instance.NextLevelFromHouse();
+        
+    }
 }
