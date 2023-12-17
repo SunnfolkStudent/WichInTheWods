@@ -1,7 +1,14 @@
 fileFormatVersion: 2
-guid: 32fe8b63b8066fa4fbdbb3fc513e0b57
+<<<<<<<< HEAD:Assets/audio/music.meta
+guid: 638de12089ba4453c9011cf3803751f0
+folderAsset: yes
 DefaultImporter:
+========
+guid: 22d40eae2e68dc842a5d511950306e7b
+NativeFormatImporter:
+>>>>>>>> 5ad8de0691b5de8698b8e9373e9f6510ddfb9a19:Assets/timline/paper_0Timeline.playable.meta
   externalObjects: {}
+  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
