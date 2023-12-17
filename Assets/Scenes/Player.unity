@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 900159615}
+    - target: {fileID: 5623819512298194565, guid: 1e5516ce3a22b9f4ead0bc5701e9a9d6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -870,6 +874,7 @@ MonoBehaviour:
   - {fileID: -937752843749074038, guid: 922986663ae06dd43ab69125c15e3fa4, type: 3}
   - {fileID: -1608845563761177000, guid: 2f4d74a33b1124749bb820da03bb1ebf, type: 3}
   - {fileID: 732630073466430015, guid: 569168937c5989043b62f3163ac6ec5a, type: 3}
+  solIndex: 2
   solFirst: {fileID: 1027152295}
   solSecond: {fileID: 383126863}
 --- !u!1 &1027152292
@@ -1234,7 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21447b98e66fd347b694dfddfb51d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 0
+  playerTransform: {fileID: 2025496304}
 --- !u!1 &2008968403
 GameObject:
   m_ObjectHideFlags: 0
