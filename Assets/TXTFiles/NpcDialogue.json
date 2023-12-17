@@ -266,6 +266,96 @@
           "NextScene()"
         ]
       }
+    },
+    {
+      "name": "Witch Memory Bones Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Alright, now I can cast a protection rune to preserve these graves. \"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Knight Candle Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "Choices(\"This definitely looks like a séance site, but these are the same kind of candles used in the churches\")",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Witch Memory Wolf Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Oh no, oh these poor chooks, these damned wolves, I thought they moved on, why did they have to come back and attack the chicks\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Knight Diary Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "Choices(\"If this is true then there may be more to this witch than I thought as she seems to just want to help people. Sigh, I’m starting to think things might not be as I thought them to be\")",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Witch Memory Necklace Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"Mother, I hope I’m doing the right thing by leaving, I still feel like I could do good but you always warned me that people wouldn’t understand \"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Witch Memory Arrow Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"shh shh, hush little deer, let me help you, oh you poor darling, that mean hunter hurt you didn’t he? Hush, shh shh\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Witch Memory Cloak Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"*humming for a few seconds* There, I finally finished my new cloak. Isn't it nice and warm little one? sheep noise\"",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Knight Broom Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "Choices(\"A broom out here, this definitely seems like the witch, although it doesn’t seem dangerous, being able to fly would be fun\")",
+          "Leave()"
+        ]
+      }
+    },
+    {
+      "name": "Witch Memory Bloody Knife Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"*humming for a few seconds* There, I finally finished my new cloak. Isn't it nice and warm little one? sheep noise\"",
+          "Leave()"
+        ]
+      }
     }
   ]
 }

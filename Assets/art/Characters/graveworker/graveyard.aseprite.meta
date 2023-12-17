@@ -93,7 +93,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -105,7 +105,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -115,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638378867076410278
+  platformSettingsDirtyTick: 638384236894646308
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: graveyard
+  - name: Layer 3
     originalName: 
-    pivot: {x: 0.49999997, y: 0}
+    pivot: {x: 1.6428571, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 92
+      width: 28
       height: 32
-    spriteID: 18475081ef1f651469160dba60848398
+    spriteID: 6d39ed0ed00bc1349952ed5bebba255f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,23 +159,97 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Layer 3_1
+    originalName: 
+    pivot: {x: 0.50000006, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 28
+      height: 32
+    spriteID: 3bf132bc26e9ce04e98a575e1cf2e955
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: Layer 5
+    originalName: 
+    pivot: {x: -0.64285713, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 28
+      height: 32
+    spriteID: aaf3e23864716534694303a99f69f857
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2098678353
-    name: graveyard
-    layerFlags: 0
+    guid: 1317221950
+    name: Layer 3
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: graveyard
+    - name: Layer 3
       frameIndex: 0
       cellRect:
         x: 2
         y: 0
-        width: 92
+        width: 28
         height: 32
-      spriteId: 18475081ef1f651469160dba60848398
+      spriteId: 6d39ed0ed00bc1349952ed5bebba255f
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: -1240863041
+    name: Layer 3_1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 3_1
+      frameIndex: 0
+      cellRect:
+        x: 34
+        y: 0
+        width: 28
+        height: 32
+      spriteId: 3bf132bc26e9ce04e98a575e1cf2e955
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: 1317224334
+    name: Layer 5
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 5
+      frameIndex: 0
+      cellRect:
+        x: 66
+        y: 0
+        width: 28
+        height: 32
+      spriteId: aaf3e23864716534694303a99f69f857
     linkedCells: []
     parentIndex: -1
   platformSettings:

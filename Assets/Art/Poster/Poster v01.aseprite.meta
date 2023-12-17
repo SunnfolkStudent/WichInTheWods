@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fcf5171fb9356124587b0a6e401a1f4f
+guid: a208d0acf6f82ab4589d8cc98ab2471e
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -93,7 +93,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -105,7 +105,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -115,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638384233748070708
+  platformSettingsDirtyTick: 638378867076410278
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Layer 1
+  - name: Poster v01
     originalName: 
-    pivot: {x: 2.0952382, y: 0}
+    pivot: {x: 0.48786125, y: 0.11119403}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 21
-      height: 29
-    spriteID: fca6db00393381845a8af9ec9a5938c7
+      width: 865
+      height: 1340
+    spriteID: 6637b27b334607147bb752760b784ba2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,97 +159,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Layer 5
-    originalName: 
-    pivot: {x: 0.4736842, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 41
-      width: 19
-      height: 29
-    spriteID: e78de61a0c2558b4593ce91d41f1d2cb
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 41}
-  - name: Layer 8
-    originalName: 
-    pivot: {x: -1.2777777, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 78
-      width: 18
-      height: 29
-    spriteID: 778be6e124e381646921d2e35c9e9df4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 78}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1317222744
-    name: Layer 1
-    layerFlags: 3
+    guid: 254597730
+    name: Poster v01
+    layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 1
+    - name: Poster v01
       frameIndex: 0
       cellRect:
-        x: 4
-        y: 0
-        width: 21
-        height: 29
-      spriteId: fca6db00393381845a8af9ec9a5938c7
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 1
-    guid: 1317224333
-    name: Layer 5
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 5
-      frameIndex: 0
-      cellRect:
-        x: 39
-        y: 0
-        width: 19
-        height: 29
-      spriteId: e78de61a0c2558b4593ce91d41f1d2cb
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 2
-    guid: 1317225521
-    name: Layer 8
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 8
-      frameIndex: 0
-      cellRect:
-        x: 71
-        y: 0
-        width: 18
-        height: 29
-      spriteId: 778be6e124e381646921d2e35c9e9df4
+        x: -1
+        y: -149
+        width: 865
+        height: 1340
+      spriteId: 6637b27b334607147bb752760b784ba2
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -277,4 +203,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 96, y: 32}
+  canvasSize: {x: 842, y: 1191}
