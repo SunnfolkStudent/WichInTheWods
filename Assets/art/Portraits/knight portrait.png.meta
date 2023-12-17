@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77038d7f41f158e479e9b67622dd4e89
+guid: ae98112a82aec4fb681b7d73ab9b3355
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      knight portrait_0: -2195864122989637463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
