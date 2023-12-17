@@ -30,6 +30,7 @@ public class SolsticeControler : MonoBehaviour
         print("solIndex");
         SceneChanger.Instance.NextLevel();
         
+        
     }
     public void GoToNextLevelFromHousee()
     {
