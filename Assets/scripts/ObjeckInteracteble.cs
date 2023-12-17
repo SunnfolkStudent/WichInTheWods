@@ -16,20 +16,13 @@ public class ObjeckInteracteble : MonoBehaviour, Interactable
             Player.indexCount++;
             gotClueThisLevel = true;
             solsticeControler.SolsticChange();
-            SolsticeControler.solIndex++;
+            //SolsticeControler.solIndex++;
             SceneChanger.Instance.NextLevel();
         }
         
     }
 
-    public void GoToNextLevel()
-    {
-        Player.indexCount++;
-        gotClueThisLevel = true;
-        solsticeControler.SolsticChange();
-        SolsticeControler.solIndex++;
-        SceneChanger.Instance.NextLevel();
-    }
+   
 
     public void StayHere()
     {

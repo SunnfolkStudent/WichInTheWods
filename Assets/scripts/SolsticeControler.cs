@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class SolsticeControler : MonoBehaviour
 {
     public Sprite[] SolstisObjects;
-    public static int solIndex = 1;
+    public int solIndex = 1;
 
     public Image solFirst, solSecond;
 
@@ -12,5 +12,11 @@ public class SolsticeControler : MonoBehaviour
     {
         solFirst.sprite = SolstisObjects[solIndex];
         solSecond.sprite = SolstisObjects[solIndex+1];
+    }
+    public void GoToNextLevel()
+    {
+        Player.indexCount++;
+        solIndex++;
+        SceneChanger.Instance.NextLevel();
     }
 }
