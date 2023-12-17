@@ -1968,7 +1968,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6230670494056434956, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: m_Name
-      value: Npc
+      value: Witch
       objectReference: {fileID: 0}
     - target: {fileID: 8687867678592846048, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: m_LocalPosition.x
