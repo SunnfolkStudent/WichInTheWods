@@ -257,13 +257,13 @@
           "\"Very well, then you shall be forced to best me, weapon.*Fight*\"",
           "\"NO!!!! All you’ve done here WEAPON is prove that you belong TO the church.\"",
           "Choices(\"For the crimes of witchcraft I am taking you to face justice, if the word of our lord be true, then you shall burn.\")",
-          "NextScene()",
+          "NextScene(\"BadEnding\")",
           "\"Thank you Ser Knight, I promise that you have done a good thing here today. You have proved that you still hold your soul\"",
           "Choices(\"Minerva, make a better life for yourself, go somewhere where you need not worry about the church or people who wish to harm you, I wish you the best for the future\")",
           "\"Perhaps we shall meet once again in the future, at least I hope so, for I wish good fortune upon you for giving me a chance\"",
           "Choices(\"Farewell Minerva\")",
           "\"Farewell Ser Knight, may fate smile upon us for the future.\"",
-          "NextScene()"
+          "NextScene(\"GoodEnding\")"
         ]
       }
     },
