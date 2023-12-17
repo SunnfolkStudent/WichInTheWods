@@ -368,7 +368,7 @@ PrefabInstance:
     - target: {fileID: 3877694504882041317, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
       propertyPath: playerSprite
       value: 
-      objectReference: {fileID: -2195864122989637463, guid: bf9df5f3879abb04eae8f696c2716797, type: 3}
+      objectReference: {fileID: -2195864122989637463, guid: ae98112a82aec4fb681b7d73ab9b3355, type: 3}
     - target: {fileID: 4002602772519895636, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.230987
@@ -441,7 +441,7 @@ PrefabInstance:
     - target: {fileID: 7105223492406759268, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: npc
       value: 
-      objectReference: {fileID: 11400000, guid: 925f2ec192008434a90006bdb4cdd383, type: 2}
+      objectReference: {fileID: 11400000, guid: 1ffefe663f34d3e4c8f00b3cad889a97, type: 2}
     - target: {fileID: 7105223492406759268, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: text
       value: 
@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101284806564717863, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8483708553598138486, guid: 570b7798aa81c0a4aa057dd85b1471b5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
