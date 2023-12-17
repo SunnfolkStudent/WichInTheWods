@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21447b98e66fd347b694dfddfb51d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 0
+  playerTransform: {fileID: 0}
 --- !u!1 &205212776
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +351,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: ae2ed964a5fe66447ae0ce4e3ab70fe0, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0

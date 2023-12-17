@@ -924,6 +924,8 @@ PlayableDirector:
     value: {fileID: 261707008}
   - key: {fileID: 8941090723589252311, guid: 63f236d897ac44c4ba4a93504c083e46, type: 2}
     value: {fileID: 1171788157}
+  - key: {fileID: -2630369690507608883, guid: 63f236d897ac44c4ba4a93504c083e46, type: 2}
+    value: {fileID: 1423330832}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &534563852
@@ -2031,6 +2033,8 @@ GameObject:
   - component: {fileID: 1423330829}
   - component: {fileID: 1423330828}
   - component: {fileID: 1423330831}
+  - component: {fileID: 1423330833}
+  - component: {fileID: 1423330832}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2156,6 +2160,49 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1423330832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423330827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c968df4cb8b55dc40b7b74651f3d2a9b, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1423330833}
+          m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+          m_MethodName: BackToStart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1423330833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423330827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21447b98e66fd347b694dfddfb51d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
 --- !u!1 &1487850578
 GameObject:
   m_ObjectHideFlags: 0

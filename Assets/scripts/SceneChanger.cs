@@ -73,8 +73,12 @@ public class SceneChanger : MonoBehaviour
     {
   
     }
-    
-    
+
+    public void BackToStart()
+    {
+        SceneManager.LoadScene("mainMenue");
+    }
+
     public void Exit()
     {
         Application.Quit();
