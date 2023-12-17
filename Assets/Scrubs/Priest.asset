@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
   m_Name: Priest
   m_EditorClassIdentifier: 
-  sprite: {fileID: 3108348237358908541, guid: c0fd0627dccf8ce4ab733dca27034cbd, type: 3}
+  sprite: {fileID: -5424560476772756779, guid: c0fd0627dccf8ce4ab733dca27034cbd, type: 3}
   portrait: {fileID: 7367594469012833558, guid: 8d9ddd4f7b44d6f47820b73b8a0cfd3c, type: 3}
   npcName: Priest
