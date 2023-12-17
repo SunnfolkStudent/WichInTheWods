@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger Instance { get; private set; }
-    public int sceneNumber;
+    private int sceneNumber = 2;
 
+    public  Transform playerTransform;
     private void Awake()
     {
         if (Instance == null)
@@ -20,11 +22,21 @@ public class SceneChanger : MonoBehaviour
         }
         
     }
+
+
     public void NextLevel()
     {
+        StartCoroutine(INextLevel());
+    }
+
+    public IEnumerator INextLevel()
+    {
+        yield return new WaitForSeconds(2);
+        playerTransform.position = Vector3.zero; 
         SceneManager.LoadScene(sceneNumber+1, LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync(sceneBuildIndex:sceneNumber);
+        SceneManager.UnloadSceneAsync(sceneNumber);
         sceneNumber++;
+        yield break;
     }
 
     public void StartGame()
