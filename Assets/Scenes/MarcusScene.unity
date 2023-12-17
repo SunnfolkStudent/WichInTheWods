@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 7105223492406759268, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: npc
       value: 
-      objectReference: {fileID: 11400000, guid: fb7c714683c17f5499fe83c8091f3099, type: 2}
+      objectReference: {fileID: 11400000, guid: fbf49da5418572e4e879ea91caece7e1, type: 2}
     - target: {fileID: 7105223492406759268, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: text
       value: 
