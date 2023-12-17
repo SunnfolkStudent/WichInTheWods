@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
+  m_Name: Beggar
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 4433965274651991609, guid: 575e0e8a5ab1d6e429c8a8c1302062ea, type: 3}
+  portrait: {fileID: -8954206850433104687, guid: 3837819908940e941bd849f688cb9db8, type: 3}
+  npcName: Beggar
