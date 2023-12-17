@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
   m_Name: Mayor1
   m_EditorClassIdentifier: 
-  sprite: {fileID: 8308274441020215897, guid: bc06dfc1e55971d41bf577263ef3b335, type: 3}
+  sprite: {fileID: -1372227534181973944, guid: bc06dfc1e55971d41bf577263ef3b335, type: 3}
   portrait: {fileID: 1641659521105787397, guid: 19a6c780b15a4764380e55542bcfe5ba, type: 3}
   npcName: Mayor1
