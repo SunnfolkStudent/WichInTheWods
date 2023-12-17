@@ -22,6 +22,7 @@ public class LocatsionClues : MonoBehaviour, Interactable
     {
         solsticeControler = GameObject.Find("SolsticeControler").GetComponent<SolsticeControler>();
         solsticeControler.GoToNextLevel();
+        canvas.SetActive(false);
     }
 
     public void Stay()

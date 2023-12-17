@@ -9,15 +9,23 @@ public class Door : MonoBehaviour, Interactable
     
     public void Interact()
     {
+        if (SceneManager.GetActiveScene().name == "insideRom")
+        {
+            _isInHouse = true;
+        }
+        else
+        {
+            _isInHouse = false;
+        }
         if (!_isInHouse)
         {
             SceneManager.LoadScene("insideRom",LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("vilige1");
+            SceneManager.UnloadSceneAsync("vilige 1");
             _isInHouse = true;
         }
         else if(_isInHouse)
         {
-            SceneManager.LoadScene("vilige 1");
+            SceneManager.LoadScene("vilige 1",LoadSceneMode.Additive);
             SceneManager.UnloadSceneAsync("insideRom");
             _isInHouse = false;
         }

@@ -34,6 +34,10 @@ public class SceneChanger : MonoBehaviour
         yield return new WaitForSeconds(2);
         playerTransform.position = Vector3.zero; 
         SceneManager.LoadScene(sceneNumber+1, LoadSceneMode.Additive);
+        if (SceneManager.GetActiveScene().name == "insideRom")
+        {
+            SceneManager.UnloadSceneAsync("insideRom");
+        }
         SceneManager.UnloadSceneAsync(sceneNumber);
         sceneNumber++;
         yield break;
