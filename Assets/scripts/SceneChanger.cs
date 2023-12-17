@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger Instance { get; private set; }
-    private int sceneNumber = 2;
+    private int sceneNumber = 1;
 
     public  Transform playerTransform;
     private void Awake()
@@ -38,7 +38,10 @@ public class SceneChanger : MonoBehaviour
         {
             SceneManager.UnloadSceneAsync("insideRom");
         }
-        SceneManager.UnloadSceneAsync(sceneNumber);
+        else
+        {
+             SceneManager.UnloadSceneAsync(sceneNumber);
+        }
         sceneNumber++;
         yield break;
     }
