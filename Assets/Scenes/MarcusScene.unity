@@ -192,17 +192,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e5516ce3a22b9f4ead0bc5701e9a9d6, type: 3}
---- !u!114 &600787015 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7243071601312049449, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
-  m_PrefabInstance: {fileID: 4402769671163510296}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1328877363
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,14 +350,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[DIALOGUE UI]'
       objectReference: {fileID: 0}
-    - target: {fileID: 3877694504882041317, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
-      propertyPath: playerImage
-      value: 
-      objectReference: {fileID: 600787015}
-    - target: {fileID: 3877694504882041317, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
-      propertyPath: playerSprite
-      value: 
-      objectReference: {fileID: -2195864122989637463, guid: bf9df5f3879abb04eae8f696c2716797, type: 3}
     - target: {fileID: 4002602772519895636, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.230987
@@ -409,18 +390,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7243071601312049449, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7243071601312049449, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 7243071601312049449, guid: 4ccdd9bdb29bd774184319a587e007b7, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -441,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 7105223492406759268, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: npc
       value: 
-      objectReference: {fileID: 11400000, guid: 925f2ec192008434a90006bdb4cdd383, type: 2}
+      objectReference: {fileID: 11400000, guid: fb7c714683c17f5499fe83c8091f3099, type: 2}
     - target: {fileID: 7105223492406759268, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
       propertyPath: text
       value: 
@@ -486,6 +455,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101284806564717863, guid: 8e4307a6dc67f21488ba6a12555fbba9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2886152783709866909, guid: e6ac06878e7b8ab4f9007f816b25fd2c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

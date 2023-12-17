@@ -908,8 +908,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -963,6 +963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portraitNpcImage: {fileID: 4936052010718201752}
+  playerImage: {fileID: 7243071601312049449}
+  playerSprite: {fileID: -2195864122989637463, guid: ae98112a82aec4fb681b7d73ab9b3355, type: 3}
   nameTextBox: {fileID: 8568455414044653598}
   DialogueBox: {fileID: 4733677478015542488}
 --- !u!1 &4611094233788574321

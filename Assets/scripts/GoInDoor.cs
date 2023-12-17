@@ -4,19 +4,21 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour, Interactable
 {
-    private bool _isInHouse;
+    private static bool _isInHouse;
 
-    public PlayableDirector director; 
+    
     public void Interact()
     {
-        if (_isInHouse)
+        if (!_isInHouse)
         {
-            
+            SceneManager.LoadScene("insideRom",LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("vilige1");
             _isInHouse = true;
         }
         else if(_isInHouse)
         {
-            print("goOutOfHouse");
+            SceneManager.LoadScene("vilige 1");
+            SceneManager.UnloadSceneAsync("insideRom");
             _isInHouse = false;
         }
         
