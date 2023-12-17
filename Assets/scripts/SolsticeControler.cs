@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class SolsticeControler : MonoBehaviour
 {
     public Sprite[] SolstisObjects;
-    private int solIndex = 1;
+    private int solIndex;
 
     private PlayableDirector playableDirector;
 
@@ -27,6 +27,7 @@ public class SolsticeControler : MonoBehaviour
         playableDirector.Play();
         Player.indexCount++;
         solIndex++;
+        SolsticChange();
         print("solIndex");
         SceneChanger.Instance.NextLevel();
         
@@ -37,8 +38,8 @@ public class SolsticeControler : MonoBehaviour
         playableDirector.Play();
         Player.indexCount++;
         solIndex++;
+        SolsticChange();
         print("solIndex");
         SceneChanger.Instance.NextLevelFromHouse();
-        
     }
 }
