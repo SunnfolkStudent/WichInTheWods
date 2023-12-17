@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
   m_Name: Child
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  portrait: {fileID: 0}
-  npcName: 
+  sprite: {fileID: -7746009657359184276, guid: c53aac07e6646764babb96fbd6aa22f9, type: 3}
+  portrait: {fileID: -7371906412533964069, guid: 0ec9007fa0d0b1341b14389155a526c5, type: 3}
+  npcName: Child

@@ -93,7 +93,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -105,7 +105,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -115,7 +115,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638384237161650205
+  platformSettingsDirtyTick: 638384250618503045
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -139,18 +139,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Layer 1
+  - name: priest
     originalName: 
-    pivot: {x: 2.277778, y: 0}
+    pivot: {x: 0.51250005, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 18
+      width: 80
       height: 30
-    spriteID: 8e876267f83c87e4e91bd141abf8bdd6
+    spriteID: ce8323d3fa7127d4595cbd4d37dd0254
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,97 +159,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Layer 3
-    originalName: 
-    pivot: {x: -1.4374999, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 42
-      width: 16
-      height: 30
-    spriteID: e08ca20fe76f25944bc7942ea3f95a5c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 42}
-  - name: Layer 2
-    originalName: 
-    pivot: {x: 0.43749994, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 80
-      width: 16
-      height: 30
-    spriteID: 3f4ace9576fdc594d9101a0e4d86952c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 80}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1317222744
-    name: Layer 1
-    layerFlags: 3
+    guid: -1047030071
+    name: priest
+    layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 1
+    - name: priest
       frameIndex: 0
       cellRect:
         x: 7
         y: 0
-        width: 18
+        width: 80
         height: 30
-      spriteId: 8e876267f83c87e4e91bd141abf8bdd6
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 1
-    guid: 1317221951
-    name: Layer 3
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 3
-      frameIndex: 0
-      cellRect:
-        x: 71
-        y: 0
-        width: 16
-        height: 30
-      spriteId: e08ca20fe76f25944bc7942ea3f95a5c
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 2
-    guid: 1317221555
-    name: Layer 2
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 2
-      frameIndex: 0
-      cellRect:
-        x: 41
-        y: 0
-        width: 16
-        height: 30
-      spriteId: 3f4ace9576fdc594d9101a0e4d86952c
+      spriteId: ce8323d3fa7127d4595cbd4d37dd0254
     linkedCells: []
     parentIndex: -1
   platformSettings:

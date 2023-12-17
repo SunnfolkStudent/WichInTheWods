@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39b1a7cb5d070f48828d16913e6f78a, type: 3}
   m_Name: Guard2
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  portrait: {fileID: 0}
-  npcName: 
+  sprite: {fileID: 524371830762479985, guid: 8c7f6879cefaf71478fe346c1ff3d894, type: 3}
+  portrait: {fileID: -4141421701313236791, guid: 4ec6986c18570994c8306b9fabe0a2ba, type: 3}
+  npcName: Guard2
