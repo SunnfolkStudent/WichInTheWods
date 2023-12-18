@@ -145,8 +145,8 @@ public static class SaveFileHandler
     
     public static void ResetSavegame()
     {
-        string currentJsonFilePath = Path.Combine(Application.dataPath, "TXTFiles/Savegame.json");
-        string newJsonFilePath = Path.Combine(Application.dataPath, "TXTFiles/SavegameStandard.json"); // Provide the path to the new JSON file here
+        string currentJsonFilePath = Path.Combine(Application.streamingAssetsPath, "TXTFiles/Savegame.json");
+        string newJsonFilePath = Path.Combine(Application.streamingAssetsPath, "TXTFiles/SavegameStandard.json"); // Provide the path to the new JSON file here
 
         if (!File.Exists(newJsonFilePath))
         {

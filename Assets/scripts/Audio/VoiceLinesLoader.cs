@@ -23,6 +23,8 @@ public class VoiceLinesLoader : MonoBehaviour
             DestroyImmediate(gameObject);
         
         audioSource = audioSource.GetComponent<AudioSource>();
+
+        audioSource.volume = 40;
         
         LoadVoiceLines();
         
