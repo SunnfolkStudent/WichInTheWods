@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 761100573506273824, guid: 06fcda56fedbe2c45be480a8abccaf10, type: 3}
   portrait: {fileID: 761100573506273824, guid: ae046f4a6cc2647efae025b04d34aeea, type: 3}
-  npcName: Witch Memory Bloody Knife Clue
+  npcName: Bloody Knife Clue
