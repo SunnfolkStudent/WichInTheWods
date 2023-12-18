@@ -62,6 +62,8 @@ public class SceneChanger : MonoBehaviour
     
     public IEnumerator IStartGame()
     {
+        SaveFileHandler.ResetSavegame();
+        
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("Player");
         SceneManager.LoadScene("farm", LoadSceneMode.Additive);
