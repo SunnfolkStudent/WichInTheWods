@@ -69,9 +69,14 @@ public class SceneChanger : MonoBehaviour
         yield break;
     }
 
-    public void GoInHouse()
+    public void GoodEnding()
     {
-  
+        
+    }
+
+    public void BadEnding()
+    {
+        
     }
 
     public void BackToStart()
