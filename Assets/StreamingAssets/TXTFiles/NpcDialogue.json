@@ -42,7 +42,7 @@
     },
     {
       "name": "Farmer",
-      "WhichDialogue": 1,
+      "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
           "\"Greetings Ser, wonderful day we’re having here isn’t it\"",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Guard1",
-      "WhichDialogue": 1,
+      "WhichDialogue": 0,
       "dialogue": {
         "dialogue1": [
           "\"Halt! What are you doing?\"",
