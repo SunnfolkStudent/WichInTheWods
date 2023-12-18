@@ -24,7 +24,7 @@ public class VoiceLinesLoader : MonoBehaviour
         
         audioSource = audioSource.GetComponent<AudioSource>();
 
-        audioSource.volume = 40;
+        //audioSource.volume = 40;
         
         LoadVoiceLines();
         
