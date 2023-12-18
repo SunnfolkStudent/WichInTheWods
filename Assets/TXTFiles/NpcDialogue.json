@@ -410,6 +410,32 @@
           "Leave()"
         ]
       }
+    },
+    {
+      "name": "Witch Memory Potion Clue",
+      "WhichDialogue": 0,
+      "dialogue": {
+        "dialogue1": [
+          "\"child - 'child groaning/cough noise' my head hurts miss\"",
+          "\"Witch - it’s okay little one, I need you to be brave for me right now and I need you to drink this\"",
+          "\"Child - what is it?\"",
+          "\"Witch - it will make you better and as a bonus it tastes like strawberries.\"",
+          "\"Child - *drinks* WOW I feel better already thank you miss giggling\"",
+          "\"Witch - *happy laugh*\"",
+          "NextDialogue()",
+          "GoodClue()",
+          "Leave()"
+        ],
+        "dialogue2": [
+          "\"child - 'child groaning/cough noise' my head hurts miss\"",
+          "\"Witch - it’s okay little one, I need you to be brave for me right now and I need you to drink this\"",
+          "\"Child - what is it?\"",
+          "\"Witch - it will make you better and as a bonus it tastes like strawberries.\"",
+          "\"Child - *drinks* WOW I feel better already thank you miss giggling\"",
+          "\"Witch - *happy laugh*\"",
+          "Leave()"
+        ]
+      }
     }
   ]
 }
