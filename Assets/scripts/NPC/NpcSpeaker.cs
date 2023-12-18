@@ -39,10 +39,12 @@ public class NpcSpeaker : MonoBehaviour, Interactable
     void Start()
     {
         NpcDialogueHandler.ResetDialogue();
-        _architect = new TextArchitect(text);
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = npc.sprite;
-        text = DialogueBoxManager.Instance.DialogueBox;
+        //text = DialogueBoxManager.Instance.DialogueBox;
+        text = GameObject.Find("DialogueTextBox").GetComponent<TextMeshProUGUI>();
+        
+        _architect = new TextArchitect(text);
     }
 
     // Update is called once per frame
