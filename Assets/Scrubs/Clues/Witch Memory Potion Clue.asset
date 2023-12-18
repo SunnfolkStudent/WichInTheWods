@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Witch Memory Potion Clue
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  portrait: {fileID: 0}
-  npcName: 
+  portrait: {fileID: 731806605160617493, guid: bf80332cfb7e1407a924d7582201a46e, type: 3}
+  npcName: Witch Memory Potion Clue

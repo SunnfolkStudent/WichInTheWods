@@ -41,8 +41,9 @@ public class NpcSpeaker : MonoBehaviour, Interactable
         NpcDialogueHandler.ResetDialogue();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = npc.sprite;
-        //text = DialogueBoxManager.Instance.DialogueBox;
-        text = GameObject.Find("DialogueTextBox").GetComponent<TextMeshProUGUI>();
+        text = DialogueBoxManager.Instance.DialogueBox;
+        //text = GameObject.Find("DialogueTextBox").GetComponent<TextMeshProUGUI>();
+        //text = DialogueTextBoxHolder.DialogueBox;
         
         _architect = new TextArchitect(text);
     }

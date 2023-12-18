@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -15,7 +16,7 @@ public class DialogueBoxManager : MonoBehaviour
     public TextMeshProUGUI nameTextBox;
     public TextMeshProUGUI DialogueBox;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -26,6 +27,11 @@ public class DialogueBoxManager : MonoBehaviour
         {
             Destroy(gameObject); // Ensures there's only one instance
         }
+    }
+
+    private void Start()
+    {
+        
         
         GameObject[] UIObjects = GameObject.FindGameObjectsWithTag("DialogueUI");
         dialogueUI.AddRange(UIObjects);

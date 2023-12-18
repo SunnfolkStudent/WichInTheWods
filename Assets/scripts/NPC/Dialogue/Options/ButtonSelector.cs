@@ -45,7 +45,11 @@ public class ButtonSelector : MonoBehaviour
 
     private void SelectButton(int index)
     {
-        // Perform the action associated with the selected button
-        ButtonManager.buttons[index].onClick.Invoke();
+        if (ButtonManager.currentButtonIndex != -1)
+        {
+            // Perform the action associated with the selected button
+            ButtonManager.buttons[index].onClick.Invoke();
+            ButtonManager.currentButtonIndex = -1;
+        }
     }
 }
